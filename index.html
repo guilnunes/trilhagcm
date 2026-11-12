@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1d3557">
+<meta name="description" content="Trilha de estudos por questões para a GCM de São João del-Rei (IBGP 2026)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Trilha GCM">
+<title>Trilha GCM São João del-Rei</title>
+<style>
+:root{--bg:#f4f5f7;--card:#fff;--ink:#14213d;--mut:#5b6475;--pri:#1d3557;--acc:#e0a526;--ok:#1f8a4c;--bad:#c0392b;--line:#e3e6ec;--soft:#eef2f8}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.45}
+header{background:var(--pri);color:#fff;padding:14px 16px;position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:10px}
+header h1{font-size:17px;margin:0;flex:1}
+header button{background:transparent;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:8px;padding:6px 10px;font-size:14px}
+main{max-width:640px;margin:0 auto;padding:14px 14px 90px}
+.card{background:var(--card);border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+.btn{display:block;width:100%;border:0;border-radius:12px;padding:14px;font-size:16px;font-weight:600;background:var(--pri);color:#fff;margin-top:10px;cursor:pointer}
+.btn.sec{background:var(--soft);color:var(--pri)}
+.btn.acc{background:var(--acc);color:#14213d}
+.btn:disabled{opacity:.5}
+input{width:100%;padding:13px;border:1px solid var(--line);border-radius:10px;font-size:16px;margin-top:6px}
+label{font-size:14px;color:var(--mut);display:block;margin-top:12px}
+.muted{color:var(--mut);font-size:14px}
+.big{font-size:32px;font-weight:800}
+.row{display:flex;gap:10px}
+.row>*{flex:1}
+.stat{background:var(--soft);border-radius:12px;padding:12px;text-align:center}
+.stat b{display:block;font-size:22px}
+.bar{height:8px;background:var(--line);border-radius:6px;overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;background:var(--ok)}
+.subj{margin:10px 0}
+.subj .top{display:flex;justify-content:space-between;font-size:14px}
+.tag{display:inline-block;font-size:12px;padding:2px 8px;border-radius:20px;background:var(--soft);color:var(--pri);font-weight:600;margin-right:4px}
+.tag.w4{background:#fff3d6;color:#8a5a00}
+.mod{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-top:1px solid var(--line);cursor:pointer}
+.mod:first-of-type{border-top:0}
+.mod .t{font-weight:600;font-size:15px}
+.pill{font-size:13px;color:var(--mut);white-space:nowrap;margin-left:8px}
+.done{color:var(--ok);font-weight:700}
+.opt{display:flex;gap:10px;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:12px;margin-top:10px;font-size:15px;cursor:pointer;color:var(--ink)}
+.opt .l{font-weight:800;min-width:20px}
+.opt.right{border-color:var(--ok);background:#e9f7ef}
+.opt.wrong{border-color:var(--bad);background:#fdecea}
+.opt.sel{border-color:var(--pri);background:var(--soft)}
+.fb{margin-top:14px;border-radius:12px;padding:14px;background:var(--soft)}
+.fb h4{margin:10px 0 4px;font-size:14px;text-transform:uppercase;letter-spacing:.03em;color:var(--pri)}
+.fb h4:first-child{margin-top:0}
+.trap{background:#fff3d6;border-left:4px solid var(--acc);padding:10px;border-radius:8px}
+.fb a{color:var(--pri);word-break:break-word}
+.res{font-weight:800;font-size:18px}
+.res.ok{color:var(--ok)}.res.no{color:var(--bad)}
+.qmeta{font-size:13px;color:var(--mut);margin-bottom:6px}
+.qtext{font-size:17px;font-weight:600}
+nav{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);display:flex;padding-bottom:env(safe-area-inset-bottom);z-index:6}
+nav button{flex:1;background:none;border:0;padding:10px 4px;font-size:12px;color:var(--mut)}
+nav button.on{color:var(--pri);font-weight:700}
+nav button span{display:block;font-size:20px}
+.phase{border-left:4px solid var(--line);padding-left:12px;margin:14px 0}
+.phase.now{border-color:var(--acc)}
+.phase h3{margin:0;font-size:16px}
+.timer{font-variant-numeric:tabular-nums;font-weight:700}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td,th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left}
+.err{color:var(--bad);font-size:14px;margin-top:8px}
+textarea{width:100%;min-height:120px;font-size:12px;border-radius:10px;border:1px solid var(--line);padding:8px}
+.hide{display:none}
+</style>
+</head>
+<body>
+<header><h1 id="ttl">Trilha GCM SJDR</h1><button id="hbtn" class="hide" onclick="go('home')">Início</button></header>
+<main id="app"></main>
+<nav id="nav" class="hide">
+ <button data-v="home" onclick="go('home')"><span>🏠</span>Início</button>
+ <button data-v="trail" onclick="go('trail')"><span>🧭</span>Trilha</button>
+ <button data-v="sim" onclick="go('sim')"><span>⏱️</span>Simulado</button>
+ <button data-v="review" onclick="go('review')"><span>🔁</span>Erros</button>
+ <button data-v="plan" onclick="go('plan')"><span>📅</span>Plano</button>
+</nav>
+<script src="questoes/01-base.js"></script>
+<script src="questoes/02-leis-municipais-e-federais.js"></script>
+<script src="questoes/03-simulados-vale.js"></script>
+<script src="questoes/04-estrategia-penal.js"></script>
+<script src="questoes/99-links-vale.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
