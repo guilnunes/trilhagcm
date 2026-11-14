@@ -1078,7 +1078,7 @@ q("cg",2,"Turismo e patrimônio",
 "O trem turístico Maria Fumaça, que parte de São João del-Rei, liga a cidade a:",
 ["Barbacena.","Tiradentes.","Ouro Preto.","Juiz de Fora."],1,
 "Trecho de cerca de 12 km da antiga Estrada de Ferro Oeste de Minas, em bitola estreita (76 cm), entre São João del-Rei e Tiradentes.",
-"Ouro Preto–Mariana é outro trem turístico.",
+"Ouro Preto a Mariana é outro trem turístico.",
 ["pref"],"cg");
 
 q("cg",2,"Personalidades",
