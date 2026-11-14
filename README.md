@@ -25,11 +25,13 @@ O login é só para separar o progresso de cada pessoa no aparelho. Não é segu
 | questoes/03-simulados-vale.js | Lote 3: simulados do Vale Concursos adaptados |
 | questoes/04-estrategia-penal.js | Lote 4: questões reais de Penal e Processo Penal (via Estratégia) |
 | questoes/99-links-vale.js | Liga cada questão à aula do Vale Concursos (sempre por último) |
+| novidades.js | Avisos de conteúdo novo, mostrados uma vez ao abrir o app |
+| tools/build.py | Inclui os lotes de questoes/ no index.html e no sw.js e atualiza a versão do cache |
 | sw.js, manifest.webmanifest, icons/ | PWA (instalação e uso offline) |
 
 ## Como acrescentar questões
 
-Criar um novo arquivo em `questoes/` (por exemplo `05-constitucional.js`), incluir o `<script>` correspondente em `index.html` antes de `99-links-vale.js` e acrescentar o arquivo na lista `CORE` de `sw.js`.
+Criar um novo arquivo em `questoes/` (por exemplo `11-direitos-humanos.js`), rodar `python3 tools/build.py` e acrescentar uma entrada no topo de `novidades.js`, com `id` maior que o anterior. O aviso aparece uma vez para cada usuário.
 
 Formato:
 

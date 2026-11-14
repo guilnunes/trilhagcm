@@ -223,6 +223,7 @@ function vAcct(){
   <label>Carregar arquivo de progresso</label><input type="file" accept=".json,application/json" onchange="importJSON(this.files[0])">
   <div id="io" class="muted"></div>
   <details style="margin-top:12px"><summary class="muted">Copiar/colar JSON manualmente</summary><textarea id="js">${esc(JSON.stringify(P))}</textarea><button class="btn sec" onclick="importText($('js').value)">Aplicar JSON colado</button></details></div>
+  <div class="card"><button class="btn sec" onclick="showNews(true)">🔔 Ver novidades</button></div>
   <div class="card"><button class="btn sec" onclick="twoTap(this,()=>{P=blank();save();go('home')})">Zerar progresso</button>
   <button class="btn" onclick="logout()">Sair</button></div>`;
 }
@@ -238,3 +239,26 @@ function importText(t){ try{ const d=JSON.parse(t); if(!d.answers) throw 0; P=d;
 try{ const u=localStorage.getItem("gcm_user"); if(u&&USERS[u]){user=u;load();} }catch(e){}
 render();
 if("serviceWorker" in navigator){ addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{})); }
+// ---------- Novidades ----------
+function newsKey(){ return "gcm_news_seen_"+user; }
+function newsSeen(){ try{ return +localStorage.getItem(newsKey())||0; }catch(e){ return 0; } }
+function showNews(force){
+  if(typeof NEWS==="undefined"||!NEWS.length||!user) return;
+  const last=NEWS[0].id, seen=newsSeen();
+  if(!force && seen>=last) return;
+  const list=NEWS.filter(n=>force||n.id>seen).slice(0,force?5:3);
+  const old=document.getElementById("news"); if(old) old.remove();
+  const d=document.createElement("div"); d.id="news";
+  d.style.cssText="position:fixed;inset:0;background:rgba(10,20,40,.55);z-index:50;display:flex;align-items:flex-end;justify-content:center;padding:12px";
+  d.innerHTML=`<div class="card" style="width:100%;max-width:520px;max-height:80vh;overflow:auto;margin:0">
+    <div style="font-size:13px;font-weight:700;color:var(--acc);letter-spacing:.04em">🔔 NOVIDADES</div>
+    ${list.map(n=>`<div style="margin-top:10px"><b>${n.titulo}</b> <span class="muted">· ${n.data}</span>
+      <ul style="margin:6px 0 0 18px;padding:0;font-size:14px">${n.itens.map(i=>`<li>${i}</li>`).join("")}</ul>
+      ${n.total?`<p class="muted" style="margin:6px 0 0">Total no app: ${n.total} questões</p>`:""}</div>`).join("")}
+    <button class="btn" onclick="closeNews()">Entendi</button></div>`;
+  d.addEventListener("click",e=>{ if(e.target===d) closeNews(); });
+  document.body.appendChild(d);
+}
+function closeNews(){ try{ localStorage.setItem(newsKey(), String(NEWS[0].id)); }catch(e){} const d=document.getElementById("news"); if(d) d.remove(); }
+const _render=render; render=function(){ _render(); if(user&&view==="home") setTimeout(()=>showNews(false),300); };
+if(user&&view==="home") setTimeout(()=>showNews(false),500);
