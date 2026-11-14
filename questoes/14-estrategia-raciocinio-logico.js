@@ -2,8 +2,8 @@
 E.rl0 = ["Raciocínio Lógico, Aula 00: Estruturas lógicas I", EC + "401340/aulas/4040803"];
 E.rl3 = ["Raciocínio Lógico, Aula 03: Quantificadores", EC + "401340/aulas/4040806"];
 E.rl4 = ["Raciocínio Lógico, Aula 04: Argumentos", EC + "401340/aulas/4040807"];
-E.rl8 = ["Raciocínio Lógico, Aula 08", EC + "401340/aulas/4040811"];
-E.rl10 = ["Raciocínio Lógico, Aula 10", EC + "401340/aulas/4040813"];
+E.rl8 = ["Raciocínio Lógico, Aula 08: Conjuntos numéricos", EC + "401340/aulas/4040811"];
+E.rl10 = ["Raciocínio Lógico, Aula 10: Módulo e funções", EC + "401340/aulas/4040813"];
 
 /* Aula 00: proposições e conectivos */
 q("rl",1,"Lógica proposicional",
@@ -333,3 +333,226 @@ q("rl",4,"Problemas de lógica",
 "A 3ª só tem calça. O lenço só existe na 2ª. A 1ª então dá a camisa (a calça já veio da 3ª). A 5ª fica com o casaco (a camisa já foi), e a 4ª dá a meia.",
 "Comece pelas gavetas com uma única opção possível.",
 [],["rl6"]); SRC("FCC, Pref. Jaboatão dos Guararapes, 2024");
+
+/* Aula 07: conjuntos */
+q("rl",2,"Conjuntos",
+"Num grupo de 50 guardas, 35 estão de bermuda e 27 de boné. Todos usam bermuda ou boné. Quantos usam bermuda e boné?",
+["35.","27.","15.","12."],3,
+"Pela inclusão e exclusão: n(A ∪ B) = n(A) + n(B) − n(A ∩ B). 50 = 35 + 27 − x, logo x = 62 − 50 = 12.",
+"A soma passa do total? O excesso é a interseção.",
+[],["rl7","vrl"]); SRC("FGV, Guarda Civil Municipal São José dos Campos, 2024");
+
+q("rl",2,"Conjuntos",
+"De 21 policiais, 9 atuaram na operação Delta, 11 na Águia, 8 na Brasa; 4 em Delta e Águia, 3 em Águia e Brasa, 2 em Delta e Brasa; 1 não participou de nenhuma. Quantos participaram APENAS da Brasa?",
+["1.","2.","3.","4."],3,
+"Participantes: 21 − 1 = 20. Inclusão e exclusão: 20 = 9 + 11 + 8 − 4 − 3 − 2 + x, logo x = 1 (as três). Só Brasa = 8 − (2 − 1) − (3 − 1) − 1 = 8 − 1 − 2 − 1 = 4.",
+"No diagrama de Venn, preencha do centro (três operações) para fora.",
+[],["rl7"]); SRC("UFMT, Corpo de Bombeiros/MT, 2022");
+
+q("rl",2,"Conjuntos",
+"Sendo A = {pessoas que moram em São Gonçalo} e B = {pessoas que trabalham em Niterói}, o conjunto A − (A − B) é formado por pessoas que:",
+["moram em São Gonçalo e trabalham em Niterói.","moram em Niterói e trabalham em São Gonçalo.","moram em São Gonçalo e não trabalham em Niterói.","não moram em São Gonçalo."],0,
+"A − B são os moradores de São Gonçalo que não trabalham em Niterói. Tirando-os de A, sobram os que moram em São Gonçalo e trabalham em Niterói: A − (A − B) = A ∩ B.",
+"A − (A − B) = A ∩ B.",
+[],["rl7"]); SRC("SELECON, Pref. São Gonçalo, 2022");
+
+q("rl",2,"Conjuntos",
+"Dados A = {0, 1, 2, 3}, B = {2, 4, 5, 6} e C = {2, 5, 7, 9}, o conjunto (A ∪ B) − (B ∩ C) é:",
+["{0, 1, 3, 4, 6}","{0, 1, 2, 3, 5, 7, 9}","{0, 1, 2, 3, 4, 5, 6}","{2, 5}"],0,
+"A ∪ B = {0, 1, 2, 3, 4, 5, 6}. B ∩ C = {2, 5}. Retirando 2 e 5: {0, 1, 3, 4, 6}.",
+"Resolva cada parêntese antes da diferença.",
+[],["rl7"]); SRC("Consulplan, Pref. Gonçalves/MG, 2022");
+
+q("rl",2,"Conjuntos",
+"Sendo A = {2, 4, 6, 8, 10, 12} e B = {2, 4, 6, 8, 10, 12, 14, 16}, é correto afirmar:",
+["A contém B.","A está contido em B.","B está contido em A.","B pertence a A."],1,
+"Todo elemento de A está em B, então A ⊂ B (A está contido em B; B contém A). 'Pertence' relaciona elemento e conjunto, não dois conjuntos.",
+"Contido/contém: conjunto com conjunto. Pertence: elemento com conjunto.",
+[],["rl7"]); SRC("FUNDATEC, Pref. Tramandaí, 2021");
+
+/* Aula 08: conjuntos numéricos */
+q("rl",2,"Conjuntos numéricos",
+"Sendo a e b irracionais distintos, julgue: I. a + b é sempre irracional. II. a × b é sempre irracional. III. aⁿ é sempre irracional, para todo n natural.",
+["Apenas I está certo.","Apenas II está certo.","Apenas III está certo.","Nenhum item está certo."],3,
+"Contraexemplos: √2 + (−√2) = 0 (racional); √2 × √8 = √16 = 4 (racional); (√2)² = 2 (racional). Logo, nenhuma das afirmações vale sempre.",
+"'Sempre' cai com um único contraexemplo.",
+[],["rl8"]); SRC("CEBRASPE, Pref. Camaçari, 2024");
+
+q("rl",2,"Conjuntos numéricos",
+"NÃO pertence ao conjunto dos números irracionais:",
+["√2 + 1","π","e (número de Euler)","8"],3,
+"8 é natural (logo também inteiro, racional e real). π, e e √2 + 1 têm infinitas casas decimais não periódicas: são irracionais.",
+"Raiz quadrada de número que não é quadrado perfeito é irracional.",
+[],["rl8"]); SRC("IDECAN, Corpo de Bombeiros/ES, 2022");
+
+q("rl",2,"Conjuntos numéricos",
+"Palíndromo é o número que se lê igual nos dois sentidos (como 5225). Sendo X o maior palíndromo de 4 algarismos e Y o menor de 5 algarismos, X + Y é:",
+["20000","20020","20099","20202"],0,
+"O maior palíndromo de 4 algarismos é 9999; o menor de 5 algarismos é 10001 (não pode começar com 0). 9999 + 10001 = 20000.",
+"O primeiro algarismo de um número não pode ser zero.",
+[],["rl8"]); SRC("FCC, Pref. São José do Rio Preto, 2019");
+
+q("rl",2,"Conjuntos numéricos",
+"Avalie: I. De 7 a 20 há mais ímpares do que pares. II. A soma dos ímpares de 4 a 15 é igual à soma dos pares de 7 a 18. III. A soma de dois ímpares é sempre par. Está correto apenas:",
+["II.","III.","I e II.","I e III."],1,
+"I: de 7 a 20 há 7 ímpares (7 a 19) e 7 pares (8 a 20): falso. II: 5+7+9+11+13+15 = 60 e 8+10+12+14+16+18 = 78: falso. III: ímpar + ímpar = par: verdadeiro.",
+"Conte e some de verdade: a banca aposta na intuição.",
+[],["rl8","rl9"]); SRC("FCM, Pref. Timóteo/MG, 2022");
+
+q("rl",2,"Conjuntos numéricos",
+"Julgue: ( ) 34 é sucessor de 35. ( ) Todo número natural tem antecessor natural, menos o zero. ( ) 3, 5, 7, 9, 11 é uma sequência de naturais pares. A ordem correta é:",
+["F, V, F.","V, F, V.","F, F, V.","V, V, F."],0,
+"34 é ANTECESSOR de 35. No conjunto dos naturais, só o zero não tem antecessor. 3, 5, 7, 9, 11 são ímpares.",
+"Sucessor = +1; antecessor = −1.",
+[],["rl8"]); SRC("FUNDATEC, Pref. Imbé, 2020");
+
+q("rl",2,"Conjuntos numéricos",
+"Sobre os números naturais: I. A soma de dois pares é sempre par. II. A soma de dois ímpares é sempre ímpar. III. Há infinitos números primos. Estão corretas:",
+["apenas I.","apenas II.","apenas I e II.","apenas I e III."],3,
+"Par + par = par (I certa). Ímpar + ímpar = par (II errada: 3 + 5 = 8). Euclides provou que os primos são infinitos (III certa).",
+"Ímpar + ímpar = par; par + ímpar = ímpar.",
+[],["rl8"]); SRC("FUNDATEC, Pref. Paraí, 2019");
+
+/* Aula 09: operações básicas */
+q("rl",2,"Operações básicas",
+"Ângela e Beatriz começaram a ler o mesmo livro no mesmo dia. Ângela leu 20 páginas por dia e terminou em 18 dias; Beatriz leu 15 páginas por dia. Depois que Ângela terminou, Beatriz ainda levou quantos dias?",
+["2.","3.","4.","6."],3,
+"O livro tem 20 × 18 = 360 páginas. Beatriz leva 360 ÷ 15 = 24 dias. Diferença: 24 − 18 = 6 dias.",
+"Ache primeiro o total (páginas) e depois divida pelo ritmo de cada uma.",
+[],["rl9","vrl"]); SRC("FGV, Guarda Civil Municipal São José dos Campos, 2024");
+
+q("rl",2,"Operações básicas",
+"Um tenente chamou para uma reunião 4 sargentos, e cada sargento trouxe 6 cabos. O total de pessoas na reunião foi:",
+["10.","24.","28.","29."],3,
+"Cabos: 4 × 6 = 24. Somando os 4 sargentos e o próprio tenente: 24 + 4 + 1 = 29.",
+"Não esqueça quem convocou a reunião.",
+[],["rl9"]); SRC("FGV, Guarda Civil Municipal São José dos Campos, 2024");
+
+q("rl",2,"Operações básicas",
+"Na subtração Y4 − 5X = 36, em que X e Y são algarismos, os valores são:",
+["X = 8 e Y = 8.","X = 8 e Y = 9.","X = 9 e Y = 8.","X = 9 e Y = 9."],1,
+"Na unidade, 4 − X precisa terminar em 6 com 'empréstimo': 14 − X = 6, logo X = 8. Na dezena, Y − 1 − 5 = 3, logo Y = 9. Conferindo: 94 − 58 = 36.",
+"Confira a resposta fazendo a conta de volta: 58 + 36 = 94.",
+[],["rl9"]); SRC("OBJETIVA, Pref. Simão Dias, 2022");
+
+q("rl",2,"Operações básicas",
+"Sendo X = 56³, o valor de X ÷ 2 − 1 é:",
+["175.616.","3.135.","87.807.","87.808."],2,
+"56² = 3.136 e 56³ = 3.136 × 56 = 175.616. Dividindo por 2: 87.808. Menos 1: 87.807.",
+"Faça a divisão antes da subtração (ordem das operações).",
+[],["rl9"]); SRC("OMNI, Pref. São João Batista, 2021");
+
+q("rl",2,"Operações básicas",
+"Para fabricar 1.000 unidades de um produto, há custo fixo de R$ 500,00 e custo variável de R$ 5,00 por unidade. O custo total é:",
+["R$ 550,00.","R$ 5.500,00.","R$ 1.505,00.","R$ 5.000,00."],1,
+"Custo total = fixo + variável × quantidade = 500 + 5 × 1.000 = 500 + 5.000 = R$ 5.500,00.",
+"Custo fixo entra uma vez só; o variável multiplica pela quantidade.",
+[],["rl9"]); SRC("CEBRASPE, Pref. Camaçari, 2024");
+
+/* Aula 10: módulo */
+q("rl",3,"Módulo",
+"Para a função f(x) = |x − 4|, é correto afirmar:",
+["f(−1) = −5.","f(−3) + f(3) = 0.","f(−2) = f(10).","f(0) = −4."],2,
+"f(−2) = |−6| = 6 e f(10) = |6| = 6. Módulo nunca é negativo: f(−1) = 5, f(0) = 4, e f(−3) + f(3) = 7 + 1 = 8.",
+"Módulo é a distância até o zero: sempre ≥ 0.",
+[],["rl10"]); SRC("FAFIPA, Pref. Arapongas, 2020");
+
+q("rl",3,"Módulo",
+"Para f(x) = 1 − |x + 2|, o valor de f(−3) é:",
+["−1.","0.","1.","2."],1,
+"f(−3) = 1 − |−3 + 2| = 1 − |−1| = 1 − 1 = 0.",
+"Resolva o que está dentro do módulo primeiro.",
+[],["rl10"]); SRC("MS Concursos, SEAD Passo Fundo, 2016");
+
+q("rl",3,"Módulo",
+"Quando x ≤ 2, a expressão |x − 2| + |3 − x| é igual a:",
+["5.","2x − 5.","x + 2.","5 − 2x."],3,
+"Se x ≤ 2, então x − 2 ≤ 0, logo |x − 2| = 2 − x; e 3 − x > 0, logo |3 − x| = 3 − x. Soma: 5 − 2x. Teste com x = 0: 2 + 3 = 5 = 5 − 0.",
+"Teste um valor do intervalo para conferir.",
+[],["rl10"]); SRC("Instituto AOCP, IBC, 2013");
+
+/* Aula 11: divisibilidade, MMC e MDC */
+q("rl",2,"Divisibilidade",
+"Sendo m um algarismo, o número 3m133m432 é divisível por 18 para:",
+["m = 1.","m = 4.","m = 5.","m = 7."],1,
+"Divisível por 18 = divisível por 2 e por 9. Termina em 2 (par). Soma dos algarismos: 3 + m + 1 + 3 + 3 + m + 4 + 3 + 2 = 19 + 2m, que deve ser múltiplo de 9: 19 + 8 = 27, logo m = 4.",
+"Por 9: soma dos algarismos múltipla de 9. Por 18: isso e ser par.",
+[],["rl11","vrl"]); SRC("Pref. Joinville, 2024");
+
+q("rl",2,"MMC e MDC",
+"Marcelo visita um supermercado de 10 em 10 dias e Francisco, de 12 em 12 dias. Se hoje foram juntos, a próxima visita conjunta será daqui a:",
+["24 dias.","30 dias.","45 dias.","60 dias."],3,
+"Encontros periódicos: MMC(10, 12). 10 = 2 × 5 e 12 = 2² × 3, então MMC = 2² × 3 × 5 = 60.",
+"'Quando voltam a coincidir?' = MMC. 'Maior tamanho possível de grupos iguais' = MDC.",
+[],["rl11"]); SRC("Pref. Buritama, 2024");
+
+q("rl",2,"MMC e MDC",
+"Às 6h um padeiro assa juntas fornadas de pão salgado, doce e de queijo. Depois, assa pão salgado a cada 2 horas, doce a cada 3 e de queijo a cada 4. As três voltam a sair juntas às:",
+["12 horas.","14 horas.","16 horas.","18 horas."],3,
+"MMC(2, 3, 4) = 12 horas. 6h + 12h = 18h.",
+"Some o MMC ao horário inicial.",
+[],["rl11"]); SRC("VUNESP, Pref. Piracicaba, 2023");
+
+q("rl",2,"MMC e MDC",
+"Uma quantidade menor que 100 unidades pode ser separada, sem sobras, em grupos de 12 ou de 14. Para separá-la em grupos de 13, o mínimo de unidades a acrescentar é:",
+["5.","6.","7.","8."],2,
+"A quantidade é múltiplo comum de 12 e 14: MMC = 84 (o próximo, 168, passa de 100). O múltiplo de 13 seguinte a 84 é 91. Faltam 91 − 84 = 7.",
+"Múltiplos de 13: 78, 91, 104...",
+[],["rl11"]); SRC("VUNESP, Pref. Sertãozinho, 2023");
+
+q("rl",2,"MMC e MDC",
+"Num caminhão dos bombeiros, a escada é revisada a cada 2 dias, os extintores a cada 3 e as mangueiras a cada 5. Hoje tudo foi revisado junto. Isso se repetirá em:",
+["10 dias.","15 dias.","30 dias.","40 dias."],2,
+"2, 3 e 5 são primos entre si: MMC = 2 × 3 × 5 = 30 dias.",
+"Números primos entre si: o MMC é o produto deles.",
+[],["rl11"]); SRC("IBFC, Corpo de Bombeiros/AC, 2022");
+
+/* Aula 12: análise combinatória */
+q("rl",3,"Análise combinatória",
+"Com os algarismos 1, 2, 4, 5, 7 e 8, formam-se todos os números de três algarismos distintos, escritos em ordem crescente. O número na 50ª posição é:",
+["417","428","452","517"],2,
+"Começando com 1: 5 × 4 = 20 números (posições 1 a 20); com 2: posições 21 a 40; com 4: a partir da 41ª. Dentro do 4: 41_ (4 números, 41ª a 44ª), 42_ (45ª a 48ª), 45_ começa na 49ª: 451, e a 50ª é 452.",
+"Conte em blocos pelo primeiro algarismo, depois pelo segundo.",
+[],["rl12","vrl"]); SRC("FCM/CEFET-MG, Pref. Contagem/MG, 2023");
+
+q("rl",3,"Análise combinatória",
+"De um grupo de 12 tenentes (6 homens e 6 mulheres), será formada uma equipe de 5 pessoas com homens e mulheres, tendo mais mulheres que homens. O número de equipes possíveis é:",
+["300.","390.","420.","792."],1,
+"Casos possíveis: 3 mulheres e 2 homens: C(6,3) × C(6,2) = 20 × 15 = 300; 4 mulheres e 1 homem: C(6,4) × C(6,1) = 15 × 6 = 90. Total: 390. (5 mulheres não vale, pois a equipe precisa ter homens.)",
+"Separe em casos e some ('ou' = soma; 'e' = multiplica).",
+[],["rl12"]); SRC("Instituto AOCP, Polícia Militar/PE, 2024");
+
+q("rl",3,"Análise combinatória",
+"De 8 policiais militares, 6 civis e 5 federais, quer-se formar uma equipe com 3 militares, 2 civis e 2 federais. O número de equipes possíveis é:",
+["1.120.","4.200.","8.400.","16.800."],2,
+"A ordem não importa: combinações. C(8,3) × C(6,2) × C(5,2) = 56 × 15 × 10 = 8.400.",
+"Escolher pessoas para um grupo sem cargos = combinação.",
+[],["rl12"]); SRC("Instituto AOCP, Polícia Militar/PE, 2024");
+
+q("rl",3,"Análise combinatória",
+"De 10 funcionários, entre eles Carlos e Beatriz, será escolhida uma comissão de 4, mas Carlos e Beatriz não podem ir juntos. O número de comissões possíveis é:",
+["182.","196.","210.","238."],0,
+"Total sem restrição: C(10,4) = 210. Comissões com os dois juntos: escolhem-se os outros 2 entre 8, C(8,2) = 28. Válidas: 210 − 28 = 182.",
+"Restrição 'não juntos': total menos os casos proibidos.",
+[],["rl12"]); SRC("FCM/CEFET-MG, Pref. Contagem/MG, 2023");
+
+q("rl",3,"Análise combinatória",
+"Uma prova tem 8 questões de verdadeiro ou falso. De quantas maneiras diferentes o cartão de respostas pode ser preenchido, marcando uma resposta em cada questão?",
+["16.","64.","128.","256."],3,
+"Cada questão tem 2 opções. Pelo princípio multiplicativo: 2⁸ = 256.",
+"Escolhas independentes em sequência: multiplique.",
+[],["rl12"]); SRC("FEPESE, Pref. Chapecó, 2022");
+
+q("rl",3,"Análise combinatória",
+"Quantos números PARES de quatro algarismos podem ser formados com 1, 5, 6, 7 e 8, permitindo repetição?",
+["250.","230.","180.","120."],0,
+"O último algarismo precisa ser par: 6 ou 8 (2 opções). Os outros três podem ser qualquer um dos 5: 5 × 5 × 5 × 2 = 250.",
+"Comece pela posição com restrição.",
+[],["rl12"]); SRC("IDECAN, Corpo de Bombeiros/MS, 2022");
+
+q("rl",3,"Análise combinatória",
+"O número de anagramas da palavra PLANETA é:",
+["5.040.","4.480.","3.620.","2.520."],3,
+"São 7 letras com o A repetido 2 vezes: 7! ÷ 2! = 5.040 ÷ 2 = 2.520.",
+"Letras repetidas: divida pelo fatorial das repetições.",
+[],["rl12"]); SRC("OBJETIVA, Pref. Roca Sales, 2022");
