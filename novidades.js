@@ -1,5 +1,14 @@
 // Novidades: a entrada mais recente fica no topo. Cada nova adição ao app ganha um id novo (maior que o anterior).
 const NEWS = [
+  { id: 3, data: "14/11/2026", titulo: "+27 questões de Direitos Humanos",
+    itens: [
+      "Teoria geral, características e gerações dos direitos humanos",
+      "Carta da ONU, OEA e Declaração Universal de 1948",
+      "Tratados no Brasil: status de emenda, supralegal e deslocamento de competência",
+      "Regras de Beijing e Estatuto da Igualdade Racial (Lei 12.288)",
+      "Várias de provas de Policial Penal e Polícia Civil de MG"
+    ],
+    total: 614 },
   { id: 2, data: "14/11/2026", titulo: "+101 questões de Português",
     itens: [
       "Questões reais de todas as 15 aulas de Português do Estratégia",
