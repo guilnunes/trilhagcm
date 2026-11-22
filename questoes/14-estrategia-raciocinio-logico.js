@@ -556,3 +556,60 @@ q("rl",3,"Análise combinatória",
 "São 7 letras com o A repetido 2 vezes: 7! ÷ 2! = 5.040 ÷ 2 = 2.520.",
 "Letras repetidas: divida pelo fatorial das repetições.",
 [],["rl12"]); SRC("OBJETIVA, Pref. Roca Sales, 2022");
+
+/* Aula 13: probabilidade */
+q("rl",3,"Probabilidade",
+"Na fabricação de um remédio, a chance de se usar o composto X é 0,28, a de se usar o composto Y é 0,11 e a de se usarem os dois é 0,04. Qual a probabilidade de o remédio ser feito sem X e sem Y?",
+["0,35","0,43","0,57","0,65"],3,
+"Primeiro a união: P(X ou Y) = 0,28 + 0,11 - 0,04 = 0,35. 'Nem X nem Y' é o complementar da união: 1 - 0,35 = 0,65.",
+"0,35 é a chance de usar ao menos um; a pergunta pede o contrário disso.",
+[],["rl13","vrl"]); SRC("Consulplan, Polícia Militar/RN, 2022");
+
+q("rl",3,"Probabilidade",
+"O RH de uma prefeitura constatou que um servidor falta com probabilidade de 12% em dia de chuva e de 2% em dia sem chuva. Se a previsão dá 40% de chance de chover amanhã, qual a probabilidade de um servidor qualquer faltar?",
+["4,8%","5,2%","5,6%","6%"],3,
+"Probabilidade total: soma dos dois cenários. Chuva: 0,4 × 0,12 = 0,048. Sem chuva: 0,6 × 0,02 = 0,012. Total: 0,06 = 6%.",
+"4,8% considera só o dia de chuva; falta somar o cenário sem chuva (60%).",
+[],["rl13","vrl"]); SRC("AOCP, Pref. Pinhais/PR, 2022");
+
+q("rl",3,"Probabilidade",
+"Três irmãos gêmeos idênticos são suspeitos de um crime cometido por apenas um deles. Duas testemunhas, sem conseguir distingui-los, apontam cada uma, ao acaso e de forma independente, um dos três. A probabilidade de as duas acertarem o culpado é de aproximadamente:",
+["50%.","33%.","17%.","11%."],3,
+"Cada testemunha acerta com probabilidade 1/3. Eventos independentes que precisam ocorrer juntos se multiplicam: 1/3 × 1/3 = 1/9 ≈ 11%.",
+"33% é a chance de UMA testemunha acertar; 'ambas' pede o produto.",
+[],["rl13","vrl"]); SRC("AOCP, Polícia Militar/PE, 2024");
+
+q("rl",3,"Probabilidade",
+"Num teste físico com duas etapas, E1 e E2, todos fizeram as duas. 300 pessoas passaram em E1, 135 foram reprovadas em E2, 180 passaram nas duas e 150 passaram em apenas uma. É correto afirmar que:",
+["35 pessoas foram reprovadas nas duas etapas.","a probabilidade de alguém ter passado nas duas etapas é menor que 50%.","a probabilidade de alguém, sorteado ao acaso, ter sido reprovado em pelo menos uma etapa passa de 50%.","a probabilidade de um sorteado ter sido reprovado nas duas etapas é 1/23."],3,
+"Passou em E1 e não em E2: 300 - 180 = 120. Reprovado nas duas: 135 - 120 = 15. Passou só em E2: 150 - 120 = 30. Total: 180 + 120 + 30 + 15 = 345. Reprovado nas duas: 15/345 = 1/23. Passou nas duas: 180/345 ≈ 52%; reprovado em alguma: 165/345 ≈ 48%.",
+"Monte a tabela de dupla entrada antes de calcular; o total (345) não é dado.",
+[],["rl13","vrl"]); SRC("AOCP, Polícia Militar/PE, 2024");
+
+q("rl",3,"Probabilidade",
+"Um casal e seis amigos alugaram um carro com motorista que tem 3 bancos de 3 lugares; um dos lugares da ponta de um banco é o do motorista. Se as 8 pessoas ocupam os 8 lugares livres ao acaso, a probabilidade de o casal ficar lado a lado é:",
+["1/8","5/56","5/28","1/28"],2,
+"Total: 8!. Pares de lugares vizinhos: 1 no banco do motorista e 2 em cada um dos outros bancos = 5; o casal pode trocar de lugar entre si (× 2) e os 6 amigos se arrumam de 6! modos. P = 10 × 6! / 8! = 10/56 = 5/28.",
+"No banco com o motorista sobra só 1 par de vizinhos, não 2.",
+[],["rl13","vrl"]); SRC("FUNDEP, Pref. Mariana/MG, 2022");
+
+q("rl",3,"Probabilidade",
+"De um grupo de 6 homens e 8 mulheres será sorteada uma comissão de 3 pessoas. A probabilidade de a comissão ter exatamente 2 mulheres e 1 homem é:",
+["3/8","5/12","6/13","8/15"],2,
+"Casos possíveis: C(14,3) = 364. Favoráveis: C(8,2) × 6 = 28 × 6 = 168. P = 168/364 = 6/13.",
+"Comissão não tem ordem: use combinação no total e nos favoráveis.",
+[],["rl13","vrl"]); SRC("FGV, Técnico TRT 24ª Região, 2025");
+
+q("rl",3,"Probabilidade",
+"Em certa comarca, os promotores A e B respondem por 60% e 40% dos processos, e deixam sem conclusão 3% e 7% dos seus processos, respectivamente. Sorteado um processo sem conclusão, a probabilidade de ele ser do promotor B é de:",
+["50,87%","55,87%","60,87%","65,87%"],2,
+"Teorema de Bayes. P(sem conclusão) = 0,6 × 0,03 + 0,4 × 0,07 = 0,018 + 0,028 = 0,046. P(B | sem conclusão) = 0,028 / 0,046 ≈ 60,87%.",
+"Já se sabe que o processo é inconclusivo: divida pela probabilidade de ser inconclusivo, não por 1.",
+[],["rl13","vrl"]); SRC("Consulplan, Ministério Público/MG, 2023");
+
+q("rl",3,"Probabilidade",
+"Das denúncias recebidas por uma delegacia, 44% são de roubo, 36% de fraude eletrônica e 20% de tráfico. São improcedentes 10% das de roubo, 30% das de fraude e 20% das de tráfico. Sorteada uma denúncia procedente, a probabilidade de ela ser de roubo é de aproximadamente:",
+["50%","49%","48%","47%"],1,
+"Procedentes: roubo 0,44 × 0,9 = 0,396; fraude 0,36 × 0,7 = 0,252; tráfico 0,2 × 0,8 = 0,16; total 0,808. Bayes: 0,396 / 0,808 ≈ 0,49 = 49%.",
+"Use a taxa de PROCEDENTES (100% menos a de improcedentes) em cada tipo.",
+[],["rl13","vrl"]); SRC("FGV, Polícia Civil/MG, 2025");
