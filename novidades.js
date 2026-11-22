@@ -1,5 +1,12 @@
 // Novidades: a entrada mais recente fica no topo. Cada nova adição ao app ganha um id novo (maior que o anterior).
 const NEWS = [
+  { id: 6, data: "22/11/2026", titulo: "+8 questões de Probabilidade",
+    itens: [
+      "Probabilidade da união, do complementar e de eventos independentes",
+      "Probabilidade total e teorema de Bayes",
+      "Questões da PM/PE, PC/MG, MP/MG e Pref. Mariana/MG"
+    ],
+    total: 733 },
   { id: 5, data: "14/11/2026", titulo: "+77 questões de Raciocínio Lógico",
     itens: [
       "Proposições, conectivos, tabela-verdade e quantificadores",
