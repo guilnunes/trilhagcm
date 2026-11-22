@@ -1208,7 +1208,7 @@ q("rl",2,"Conjuntos numéricos",
 q("rl",3,"Probabilidade",
 "Em uma urna há 3 bolas azuis e 2 vermelhas. Retirando-se 2 bolas sem reposição, a probabilidade de ambas serem vermelhas é:",
 ["1/5","1/10","2/5","4/25"],1,
-"2/5 × 1/4 = 2/20 = 1/10.",
+"Na primeira retirada há 2 vermelhas em 5 bolas (2/5). Sem reposição, sobram 1 vermelha em 4 bolas (1/4). Multiplicando: 2/5 × 1/4 = 2/20 = 1/10.",
 "Sem reposição: o total diminui na segunda retirada.",
 [],"rl13");
 
@@ -1272,7 +1272,7 @@ q("inf",2,"Excel (Microsoft 365)",
 q("inf",2,"Excel (Microsoft 365)",
 "No Excel, com A1 = 10, A2 = 20 e A3 = 30, a fórmula =MÉDIA(A1:A3)+MÁXIMO(A1:A3) retorna:",
 ["40","50","60","20"],1,
-"MÉDIA = 20; MÁXIMO = 30; 20 + 30 = 50.",
+"MÉDIA(A1:A3) = (10 + 20 + 30) ÷ 3 = 20 e MÁXIMO(A1:A3) = 30. Somando os dois resultados: 20 + 30 = 50.",
 "Calcule cada função separadamente e some.",
 ["ms"],"in10");
 

@@ -1,0 +1,29 @@
+name: Validar banco de questões
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Regras do banco (4 alternativas, gabarito, links, travessão, SRC, repetidas, novidades, build)
+        run: node tools/validate.js
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar Playwright
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Teste do app no navegador (login, quiz, simulado)
+        run: python tools/test.py
