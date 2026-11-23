@@ -1,0 +1,243 @@
+// ===== LOTE 15: questões reais de Noções de Informática (Estratégia, curso 400883), reescritas e adaptadas para 4 alternativas =====
+E.in1 = ["Informática, Aula 01: Internet e redes (parte 2)", EC + "400883/aulas/4036111"];
+E.in3 = ["Informática, Aula 03: Ferramentas, aplicativos e navegadores", EC + "400883/aulas/4036113"];
+E.in4 = ["Informática, Aula 04: Recursos de pesquisa e busca", EC + "400883/aulas/4036114"];
+E.in12 = ["Informática, Aula 12: PowerPoint", EC + "400883/aulas/4036122"];
+E.in16 = ["Informática, Aula 16: Teams", EC + "400883/aulas/4036126"];
+E.in17 = ["Informática, Aula 17: Redes sociais", EC + "400883/aulas/4036127"];
+
+/* Aula 00: Internet e redes */
+q("inf",3,"Redes",
+"Sobre a Web, julgue: I. É um serviço que funciona sobre a internet. II. Apresenta a informação como hipertexto, com documentos ligados por links. III. Trouxe uma forma visual de publicar conteúdo, com linguagem própria (HTML). A sequência correta (V ou F) é:",
+["F, V, F.","F, F, V.","V, V, F.","V, V, V."],3,
+"As três estão certas. A internet é a infraestrutura; a Web é um dos serviços que rodam sobre ela, com páginas ligadas por links (hipertexto) e escritas em HTML, que trouxe a apresentação visual.",
+"Internet e Web não são sinônimos: a Web é só uma parte da internet.",
+[],["in0","vinf"]); SRC("IBGP, Pref. Uberaba/MG, 2019");
+
+q("inf",3,"Redes",
+"A rede que alcança algumas centenas de metros, cobrindo escritórios, casas e prédios, é chamada de:",
+["MAN.","WAN.","SAN.","LAN."],3,
+"LAN (rede local) cobre uma sala, um prédio ou um campus. MAN cobre uma cidade, WAN cobre países e continentes, e SAN é uma rede dedicada a armazenamento.",
+"Pense no tamanho: PAN (poucos metros) < LAN < MAN < WAN.",
+[],["in0","vinf"]); SRC("IBGP, Pref. Santa Luzia/MG, 2018");
+
+q("inf",3,"Redes",
+"Complete, na ordem: rede restrita a uma sala, prédio ou campus; rede pessoal de poucos metros, como o Bluetooth; rede que cobre uma cidade ou região metropolitana; rede que cobre um país ou continente.",
+["LAN / MAN / WAN / PAN","MAN / LAN / WAN / PAN","LAN / PAN / MAN / WAN","PAN / LAN / MAN / WAN"],2,
+"LAN = local (prédio, campus); PAN = pessoal (Bluetooth, poucos metros); MAN = metropolitana (cidade); WAN = de longa distância (país, continente).",
+"A ordem segue a das definições, não a do tamanho das redes.",
+[],["in0","vinf"]); SRC("Consulplan, Pref. Pouso Alegre/MG, 2024");
+
+q("inf",3,"Redes",
+"Para proteger uma rede Wi-Fi contra intrusos, qual opção oferece o maior grau de segurança?",
+["WEP.","WEP com filtro de endereço MAC.","WPA com IP.","WPA2 com criptografia AES."],3,
+"O WEP é antigo e se quebra em minutos; filtro de MAC é fácil de burlar, e IP nem é criptografia. Entre as opções, WPA2 com AES é a mais forte. Hoje existe também o WPA3, ainda mais seguro.",
+"WEP = inseguro. Quanto mais novo o WPA, melhor.",
+[],["in0","vinf"]); SRC("FGV, Policial Legislativo Senado Federal, 2022");
+
+q("inf",3,"Redes",
+"O técnico pediu a um servidor que identificasse o RJ45 do computador. RJ45 é:",
+["o conector na ponta do cabo de rede.","o botão de reiniciar o roteador.","o aparelho que distribui o sinal sem fio.","a antena do roteador."],0,
+"RJ45 é o conector (plug) do cabo de rede Ethernet de par trançado, que encaixa no computador, no switch ou no roteador.",
+"RJ45 é o conector, não o cabo inteiro.",
+[],["in0","vinf"]); SRC("FCC, Agente Administrativo Pref. São José do Rio Preto/SP, 2019");
+
+q("inf",3,"Redes",
+"Um agente precisa de um equipamento para ligar vários computadores numa rede local de modo que os dados sejam entregues só ao computador de destino, e não a todos. O equipamento é o:",
+["hub.","switch.","modem.","firewall."],1,
+"O switch aprende qual computador está em cada porta e envia os dados só para o destino. O hub repete tudo para todas as portas (broadcast). Modem converte sinais e firewall filtra tráfego.",
+"Hub = manda para todos; switch = manda só para o destino.",
+[],["in0","vinf"]); SRC("FCC, Agente de Trânsito DETRAN/SP, 2019");
+
+q("inf",3,"Redes",
+"Nos telefones IP de uma instituição, as pessoas conseguem falar e ouvir ao mesmo tempo, sem interrupção. Esse modo de comunicação é o:",
+["simplex.","half-duplex.","full-duplex.","doubleplex."],2,
+"Full-duplex: os dois lados transmitem ao mesmo tempo (telefone). Half-duplex: os dois transmitem, mas um de cada vez (rádio walkie-talkie). Simplex: só um sentido (TV aberta). Doubleplex não existe.",
+"Walkie-talkie ('câmbio') é o exemplo clássico de half-duplex.",
+[],["in0","vinf"]); SRC("Consulplan, Pref. Cacoal/RO, 2024");
+
+/* Aula 01: Internet e redes (parte 2) */
+q("inf",3,"Internet",
+"Complete: os ______ são as regras que permitem que os vários dispositivos ligados à internet se comuniquem.",
+["algoritmos","compiladores","protocolos","roteadores"],2,
+"Protocolo é o conjunto de regras de comunicação (exemplos: TCP/IP, HTTP, SMTP). Algoritmo é sequência de passos, compilador traduz programas e roteador é um equipamento.",
+"Roteador usa protocolos, mas é um aparelho, não a regra.",
+[],["in1","vinf"]); SRC("IBGP, Pref. São João del-Rei/MG, 2021");
+
+q("inf",3,"Internet",
+"Os computadores se comunicam usando um endereço físico e único gravado na interface de rede de cada dispositivo. Esse endereço é o:",
+["MAC.","IP.","HTTP.","WWW."],0,
+"O endereço MAC é físico e vem gravado na placa de rede pelo fabricante. O IP é lógico e pode mudar conforme a rede. HTTP é protocolo e WWW é o serviço da Web.",
+"Físico = MAC; lógico = IP.",
+[],["in1","vinf"]); SRC("IBGP, SEJUSP/MG, 2021");
+
+q("inf",3,"Internet",
+"No endereço http://www.andrelandia.mg.gov.br, a parte 'http' indica:",
+["o domínio do site.","o tipo de instituição dona do domínio.","o protocolo de transferência.","o tipo de registro do endereço."],2,
+"HTTP (protocolo de transferência de hipertexto) é o protocolo usado entre navegador e servidor. O domínio é andrelandia.mg.gov.br, e o '.gov.br' indica que o site é de governo.",
+"O que vem antes de '://' é sempre o protocolo.",
+[],["in1","vinf"]); SRC("IBGP, Pref. Andrelândia/MG, 2019");
+
+q("inf",3,"Internet",
+"O principal conjunto de protocolos, que permite a comunicação entre computadores de redes diferentes ligadas pela internet, é o:",
+["HTML","HTTP","TCP/IP","WWW"],2,
+"TCP/IP é a pilha de protocolos que sustenta a internet. HTTP é só um protocolo dessa pilha (o das páginas), HTML é linguagem de marcação e WWW é o serviço da Web.",
+"'Conjunto' de protocolos = TCP/IP.",
+[],["in1","vinf"]); SRC("IBGP, Pref. Sete Lagoas/MG, 2018");
+
+q("inf",3,"Internet",
+"Relacione o serviço com a função: 1. FTP; 2. SMTP; 3. POP3. ( ) envio de e-mails; ( ) leitura (download) de e-mails; ( ) transferência de arquivos. A sequência correta é:",
+["1, 3, 2.","2, 1, 3.","2, 3, 1.","3, 1, 2."],2,
+"SMTP envia mensagens; POP3 baixa as mensagens do servidor para leitura; FTP transfere arquivos. Sequência: 2, 3, 1.",
+"SMTP manda, POP3 e IMAP recebem.",
+[],["in1","vinf"]); SRC("IBGP, Pref. Santa Luzia/MG, 2018");
+
+q("inf",3,"Internet",
+"Numa rede IPv4, qual destes endereços é válido para um computador?",
+["204.17.5.262","204.317.5.32","204.15.328.128","204.15.5.32"],3,
+"No IPv4 cada um dos 4 números (octetos) vai de 0 a 255. Só 204.15.5.32 respeita esse limite; os outros têm 262, 317 ou 328.",
+"Qualquer octeto acima de 255 invalida o endereço.",
+[],["in1","vinf"]); SRC("FCC, Assistente de Gestão Pública Pref. Recife/PE, 2019");
+
+/* Aula 02: Intranet */
+q("inf",3,"Intranet",
+"Sobre intranets, julgue: I. Aumentam a segurança e a proteção dos dados da organização. II. São redes privadas que usam os protocolos TCP/IP. III. A arquitetura aberta é uma desvantagem, pois dificulta ligar os computadores da organização. Está correto o que se afirma em:",
+["II, apenas.","I e II, apenas.","I e III, apenas.","II e III, apenas."],1,
+"I e II estão certas: a intranet é privada, restringe o acesso externo e usa a mesma tecnologia da internet (TCP/IP). III erra ao chamar a arquitetura aberta de desvantagem: é justamente o que facilita a integração.",
+"Usar padrões abertos (TCP/IP, navegador) é vantagem da intranet, não defeito.",
+[],["in2","vinf"]); SRC("IBGP, TJ/RS, 2021");
+
+q("inf",3,"Intranet",
+"Julgue: I. A intranet é uma rede pública que oferece os serviços da internet, mas restrita a uma empresa. II. O FTP serve para enviar e baixar arquivos numa conexão de internet. III. HTML é a linguagem padrão para criar páginas da Web. Estão corretas:",
+["I e II, apenas.","I e III, apenas.","II e III, apenas.","I, II e III."],2,
+"I está errada porque a intranet é PRIVADA (o resto da frase até está certo). II e III estão certas: FTP é o protocolo de transferência de arquivos e HTML é a linguagem de marcação das páginas.",
+"Uma palavra derruba a frase: 'pública' no lugar de 'privada'.",
+[],["in2","vinf"]); SRC("IBGP, Pref. Dores do Indaiá/MG, 2021");
+
+q("inf",3,"Intranet",
+"Um consórcio de saúde tem uma página acessada só pelos usuários da sua própria rede, na sede e nas regionais, por circuitos de dados exclusivos. Essa página corresponde ao conceito de:",
+["internet.","extranet.","intranet.","VPN."],2,
+"Página interna, acessada só por quem é da organização = intranet. Extranet abriria parte dela para parceiros de fora; VPN é o túnel seguro usado para acessar a rede interna de longe.",
+"Liberou acesso a gente de FORA (fornecedor, cliente)? Aí é extranet.",
+[],["in2","vinf"]); SRC("IBGP, CISSUL/MG, 2017");
+
+q("inf",3,"Intranet",
+"Para um professor acessar, do computador de casa, a intranet da universidade onde trabalha, o setor de TI deve liberar o acesso por:",
+["DHCP.","LAN.","VPN.","FTP."],2,
+"A VPN cria um túnel criptografado pela internet até a rede da instituição, como se o usuário estivesse lá dentro. DHCP distribui endereços IP, LAN é a rede local e FTP transfere arquivos.",
+"Acesso remoto e seguro à rede interna = VPN.",
+[],["in2","vinf"]); SRC("Cesgranrio, UNIRIO, 2016");
+
+q("inf",3,"Intranet",
+"Se a ligação entre a intranet de uma empresa e a internet cai, a intranet:",
+["continua dando acesso à internet pelos servidores internos.","para de funcionar e desconecta todos os usuários.","mantém os serviços internos, inclusive o uso do navegador para acessá-los.","passa a cada computador um caminho alternativo de acesso à Web."],2,
+"A intranet funciona dentro da rede da empresa. Sem o link externo, perde-se a internet, mas os serviços internos (portal, sistemas, e-mail interno) seguem acessíveis pelo navegador.",
+"Intranet não depende da internet para funcionar por dentro.",
+[],["in2","vinf"]); SRC("Cesgranrio, Petrobras, 2011");
+
+q("inf",3,"Intranet",
+"Uma intranet é um site do tipo:",
+["público: qualquer pessoa na internet vê o conteúdo.","compartilhado: funcionários e clientes veem o conteúdo.","interno: só as pessoas ligadas à empresa veem o conteúdo.","seguro: qualquer pessoa com uma senha especial vê o conteúdo."],2,
+"Intranet é interna: só quem é da organização acessa. Abrir para clientes ou fornecedores seria extranet; público é a internet comum.",
+"Funcionários + clientes = extranet, não intranet.",
+[],["in2","vinf"]); SRC("FGV, Pref. Salvador/BA, 2017");
+
+/* Aula 03: Ferramentas, aplicativos e navegadores */
+q("inf",3,"Navegadores",
+"No Google Chrome em português, configuração padrão, julgue os atalhos: I. Ctrl+A abre a página inicial na guia atual. II. Ctrl+T abre uma nova guia e vai para ela. III. Ctrl+M abre o menu do Chrome. IV. Ctrl+L leva à barra de endereços. Estão corretos:",
+["I e II, apenas.","I, II e III, apenas.","II e IV, apenas.","I, II, III e IV."],2,
+"Ctrl+T abre nova guia e Ctrl+L seleciona a barra de endereços (F6 e Alt+D também). Ctrl+A seleciona tudo na página, e o menu do Chrome abre com Alt+F ou Alt+E, não com Ctrl+M.",
+"Ctrl+A no navegador é 'selecionar tudo', como em quase todo programa.",
+[],["in3","vinf"]); SRC("IBGP, SEJUSP/MG, 2021");
+
+q("inf",3,"Navegadores",
+"No Google Chrome, o atalho que abre uma NOVA JANELA do navegador é:",
+["Alt+A.","Ctrl+T.","Alt+N.","Ctrl+N."],3,
+"Ctrl+N abre uma nova janela; Ctrl+T abre uma nova guia (aba) na mesma janela; Ctrl+Shift+N abre janela anônima. A banca deu Ctrl+T na prova original, que pedia 'aba em nova janela', mas no Chrome quem abre janela é o Ctrl+N.",
+"T de 'tab' (guia); N de 'new window' (janela).",
+[],["in3","vinf"]); SRC("IBGP, Pref. Itabira/MG, 2021");
+
+q("inf",3,"Navegadores",
+"São pequenos arquivos que os sites visitados gravam no computador pelo navegador, com dados para reconhecer o visitante, personalizar a página ou manter informações entre as páginas do mesmo site. Trata-se de:",
+["vírus.","cookie.","worm.","backdoor."],1,
+"Cookies guardam preferências, sessão de login e itens do carrinho, por exemplo. Não são programas maliciosos e podem ser apagados nas configurações do navegador.",
+"Cookie não é malware, mas pode ser usado para rastrear a navegação.",
+[],["in3","vinf"]); SRC("IBGP, SEJUSP/MG, 2021");
+
+q("inf",3,"Navegadores",
+"Ao acessar uma página cujo endereço começa com HTTPS, entende-se que a página usa conexão:",
+["segura.","suspeita.","insegura.","perigosa."],0,
+"O S de HTTPS indica conexão criptografada (TLS) entre o navegador e o site, o que protege senhas e dados no caminho. Isso não garante que o site seja honesto: golpistas também usam HTTPS.",
+"HTTPS protege o trajeto dos dados, não atesta a boa-fé do site.",
+[],["in3","vinf"]); SRC("IBGP, Pref. São João del-Rei/MG, 2021");
+
+q("inf",3,"Navegadores",
+"No Microsoft Edge (e no antigo Internet Explorer), o modo de navegação que não guarda histórico, cookies nem dados de formulário depois de fechada a janela é o:",
+["SecurityOn.","InSecurity.","PrivateOn.","InPrivate."],3,
+"InPrivate é o nome da navegação privada da Microsoft (Ctrl+Shift+N no Edge). No Chrome se chama 'anônima' e no Firefox 'privativa'. A questão original citava o Internet Explorer, que foi descontinuado; o Edge mantém o mesmo nome.",
+"Navegação privada não esconde nada do provedor nem dos sites.",
+[],["in3","vinf"]); SRC("IBGP, Pref. Itabira/MG, 2021");
+
+q("inf",3,"Navegadores",
+"No Mozilla Firefox, com várias abas abertas, o atalho que leva à ÚLTIMA aba é:",
+["Ctrl+U.","Ctrl+S.","Ctrl+9.","Ctrl+F12."],2,
+"Ctrl+1 a Ctrl+8 vão para a aba daquela posição, e Ctrl+9 vai sempre para a última (vale também no Chrome e no Edge). Ctrl+U mostra o código-fonte e Ctrl+S salva a página.",
+"O 9 não é 'nona aba': é sempre a última.",
+[],["in3","vinf"]); SRC("IBGP, Pref. Dores do Indaiá/MG, 2021");
+
+q("inf",3,"Navegadores",
+"Um assistente fechou sem querer, no Google Chrome, a guia de um site que tinha achado depois de muita busca. Para reabrir a última guia fechada, ele deve usar:",
+["Ctrl+Shift+T.","Ctrl+Shift+Z.","Alt+Tab.","Ctrl+T."],0,
+"Ctrl+Shift+T reabre as guias fechadas, na ordem inversa (pode repetir). Ctrl+T abre uma guia nova em branco e Alt+Tab alterna entre programas abertos.",
+"Ctrl+T abre guia nova; com Shift, desfaz o fechamento.",
+[],["in3","vinf"]); SRC("FCC, Assistente Pref. Manaus/AM, 2019");
+
+q("inf",3,"Navegadores",
+"No modo de navegação anônima do Google Chrome:",
+["o histórico e os cookies ficam salvos, mas só o usuário os vê.","os downloads e favoritos são apagados quando o Chrome é fechado.","a atividade continua visível para o provedor de internet.","os dados de formulários, menos as senhas, ficam salvos."],2,
+"A janela anônima só deixa de gravar histórico, cookies e formulários NO APARELHO. O provedor, a rede da empresa e os sites visitados continuam vendo o acesso. Arquivos baixados e favoritos criados permanecem.",
+"Anônimo para o computador, não para a internet.",
+[],["in3","vinf"]); SRC("Cebraspe, Corpo de Bombeiros/TO, 2023");
+
+/* Aula 04: Recursos de pesquisa e busca */
+q("inf",3,"Pesquisa na internet",
+"No Google, um usuário quer resultados sobre FUTEBOL, mas sem nenhuma página que contenha a palavra AMERICANO. Ele deve digitar:",
+["futebol -americano","futebol: excluir americano","defina: futebol sem americano","pesquisa: futebol excluir \"americano\""],0,
+"O sinal de menos colado à palavra (-americano) exclui da busca as páginas que a contêm. 'Excluir', 'sem' e 'pesquisa:' não são comandos do Google; 'defina:' só mostra definições. O gabarito divulgado para a questão original apontava outra opção, mas o comando que funciona no Google é o sinal de menos.",
+"O menos vai COLADO na palavra: 'futebol - americano' (com espaço) não exclui nada.",
+[],["in4","vinf"]); SRC("IBGP, Pref. São João del-Rei/MG, 2021");
+
+q("inf",3,"Pesquisa na internet",
+"Um técnico pesquisou uma frase no Google e viu que muitos sites traziam só parte dela. Para obter apenas as páginas com a frase exata, ele deve colocá-la entre:",
+["asteriscos.","colchetes.","aspas.","os sinais < e >."],2,
+"Aspas pedem correspondência exata: as palavras juntas e naquela ordem. O asterisco funciona como coringa (substitui uma palavra desconhecida). Colchetes e < > não são operadores do Google.",
+"Asterisco é coringa, não busca exata.",
+[],["in4","vinf"]); SRC("FCC, Técnico AFAP, 2019");
+
+q("inf",3,"Pesquisa na internet",
+"No Google, qual destas buscas retorna o MENOR número de resultados?",
+["\"exemplo\" - exemplo","\"exemplo\" -exemplo","exemplo - exemplo","exemplo OR exemplo"],1,
+"Em \"exemplo\" -exemplo, pede-se a palavra exata e, ao mesmo tempo, exclui-se toda página que a contenha: não sobra nada. Com espaço depois do menos, a exclusão não acontece, e OR apenas soma resultados.",
+"Sinal de menos separado da palavra não exclui.",
+[],["in4","vinf"]); SRC("FGV, Polícia Militar/SP, 2022");
+
+q("inf",3,"Pesquisa na internet",
+"O domínio de um banco é bancox.com.br. Quantos destes links poderiam ser do banco? (1) www.atendimento.bancox.br.ouvidoria.com (2) www.bancox.com.br.atendimento.com (3) www.ouvidoria.atendimento.bancox.br (4) www.atendimento.bancox.com.br/dividas",
+["Nenhum.","Um.","Dois.","Três."],1,
+"O que manda no endereço é o final do domínio, antes da primeira barra. Só o link 4 termina em bancox.com.br (é um subdomínio do banco). O 1 pertence a ouvidoria.com, o 2 a atendimento.com e o 3 a bancox.br, que é outro domínio.",
+"Golpistas põem o nome do banco no COMEÇO do endereço; leia o final.",
+[],["in4","vinf"]); SRC("FGV, Pref. Paulínia/SP, 2021");
+
+q("inf",3,"Pesquisa na internet",
+"Qual destas pesquisas no Google é a mais restritiva?",
+["prefeitura municipal da estância de Cananéia","\"prefeitura municipal da estância de Cananéia\" site:www.cananeia.sp.gov.br","\"prefeitura municipal da estância de Cananéia\"","prefeitura municipal da *"],1,
+"Ela combina duas restrições: a frase exata (aspas) e só dentro de um site (site:). As outras usam no máximo uma restrição ou nenhuma, e o * ainda amplia a busca.",
+"Mais operadores somados = menos resultados.",
+[],["in4","vinf"]); SRC("Vunesp, Pref. Cananéia/SP, 2020");
+
+q("inf",3,"Pesquisa na internet",
+"Para encontrar no Google páginas que tenham os termos SEFAZ e AC no TÍTULO, usa-se:",
+["SEFAZ AC in caption","allintitle: SEFAZ AC","+ SEFAZ AC","~ SEFAZ AC"],1,
+"allintitle: exige que todas as palavras estejam no título da página (intitle: vale para uma palavra só). O + e o ~ já foram operadores do Google, mas foram desativados; 'in caption' nunca existiu.",
+"site: limita o site, filetype: o tipo de arquivo, intitle:/allintitle: o título.",
+[],["in4","vinf"]); SRC("Cebraspe, SEFAZ/AC, 2023");
