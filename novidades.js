@@ -1,5 +1,13 @@
 // Novidades: a entrada mais recente fica no topo. Cada nova adição ao app ganha um id novo (maior que o anterior).
 const NEWS = [
+  { id: 11, data: "23/11/2026", titulo: "+30 questões de Conhecimentos Gerais",
+    itens: [
+      "Mercosul, União Europeia e Brexit",
+      "Conflitos: Oriente Médio, Rússia e Ucrânia, refugiados",
+      "Economia brasileira: agro, parceiros comerciais, Copom e transportes",
+      "Política: eleições, presidencialismo, federação e Censo 2022"
+    ],
+    total: 877 },
   { id: 10, data: "23/11/2026", titulo: "+31 questões de Informática",
     itens: [
       "Windows 10: atalhos com a tecla Win, Gerenciador de Tarefas e impressoras",
