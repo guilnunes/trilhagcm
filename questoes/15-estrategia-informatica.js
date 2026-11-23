@@ -599,3 +599,225 @@ q("inf",2,"PowerPoint (Microsoft 365)",
 "Ctrl+M insere um novo slide depois do atual. Ctrl+N cria uma nova apresentação em branco e Ctrl+P abre a impressão.",
 "M de mais um slide; N de novo arquivo.",
 ["ms"],["in12","vinf"]); SRC("Vunesp, Pref. Buritizal/SP, 2018");
+
+/* Aula 13: Windows 10 */
+q("inf",1,"Windows",
+"No Windows 10 em português, assinale o atalho com a função CORRETA:",
+["Win+O: abre a central de ações.","Win+D: mostra e oculta a área de trabalho.","Win+M: abre o Explorador de Arquivos.","Win+C: abre as Configurações."],1,
+"Win+D minimiza tudo e mostra a área de trabalho; repetindo, as janelas voltam. Explorador de Arquivos é Win+E, Configurações é Win+I e central de ações é Win+A. Win+M só minimiza as janelas.",
+"D de desktop; E de Explorer; I de configurações.",
+["ms"],["in13","vinf"]); SRC("IBGP, Pref. Betim/MG, 2022");
+
+q("inf",1,"Windows",
+"Sobre o Gerenciador de Tarefas do Windows 10, julgue (V ou F): ( ) otimiza as unidades de disco para funcionarem melhor; ( ) monitora o desempenho de recursos como processador e memória; ( ) mostra os programas abertos e os que rodam em segundo plano. A sequência correta é:",
+["F, V, F.","F, V, V.","V, F, F.","V, F, V."],1,
+"O Gerenciador de Tarefas (Ctrl+Shift+Esc) lista processos e aplicativos, mostra o uso de CPU, memória, disco e rede e permite finalizar programas travados. Otimizar unidades é tarefa da ferramenta 'Desfragmentar e Otimizar Unidades'.",
+"Gerenciador de Tarefas mostra e encerra; não desfragmenta.",
+["ms"],["in13","vinf"]); SRC("IBGP, Pref. São João del-Rei/MG, 2021");
+
+q("inf",1,"Windows",
+"No Windows 10, os aplicativos que estão abertos podem ser vistos na:",
+["Barra de Arquivos.","Barra de Tarefas.","Barra de Ferramentas.","Painel de Controle."],1,
+"A Barra de Tarefas, normalmente na parte de baixo da tela, mostra os ícones dos programas abertos (com um traço embaixo) e permite alternar entre eles. 'Barra de Arquivos' não existe.",
+"Programa aberto = ícone sublinhado na Barra de Tarefas.",
+["ms"],["in13","vinf"]); SRC("IBGP, Pref. São João del-Rei/MG, 2021");
+
+q("inf",1,"Windows",
+"Um servidor quer adicionar uma impressora no computador com Windows 10 em português. Entre as opções, ele deve usar o:",
+["Gerenciamento do computador.","Windows Explorer.","Gerenciador de Dispositivos.","Painel de Controle."],3,
+"No Painel de Controle, 'Dispositivos e Impressoras' tem a opção Adicionar impressora. No Windows 10 atual o caminho mais comum é Configurações (Win+I) > Dispositivos > Impressoras e scanners. O Gerenciador de Dispositivos só mostra o hardware e seus drivers.",
+"Gerenciador de Dispositivos cuida de drivers; não é onde se adiciona impressora.",
+["ms"],["in13","vinf"]); SRC("IBGP, Pref. São João del-Rei/MG, 2021");
+
+q("inf",1,"Windows",
+"No Explorador de Arquivos do Windows 10, o atalho que cria uma NOVA PASTA é:",
+["Ctrl+P.","Alt+Shift+N.","Ctrl+N.","Ctrl+Shift+N."],3,
+"Ctrl+Shift+N cria uma nova pasta no local aberto. Ctrl+N abre uma nova janela do Explorador e Ctrl+P é imprimir.",
+"Com Shift, o N vira 'nova pasta'; sem Shift, 'nova janela'.",
+["ms"],["in13","vinf"]); SRC("IBGP, Pref. Dores do Indaiá/MG, 2021");
+
+q("inf",1,"Windows",
+"No Windows 10, o atalho que abre as Configurações do Windows é:",
+["Win+C.","Ctrl+C.","Win+I.","Ctrl+W."],2,
+"Win+I abre as Configurações. Ctrl+C copia e Ctrl+W fecha a janela ou guia atual.",
+"I de 'ícone de engrenagem' (Configurações).",
+["ms"],["in13","vinf"]); SRC("IBGP, Pref. Dores do Indaiá/MG, 2021");
+
+q("inf",1,"Windows",
+"No Windows 10 é possível criar uma conta para cada pessoa que usa o computador, porque ele é um sistema operacional:",
+["aberto.","de arquitetura livre.","de domínio público.","multiusuário."],3,
+"Multiusuário: várias contas no mesmo computador, cada uma com arquivos, área de trabalho e configurações próprias. O Windows é proprietário (pago), não é aberto nem de domínio público.",
+"Windows é proprietário; Linux é que é de código aberto.",
+["ms"],["in13","vinf"]); SRC("IBGP, Pref. Itabira/MG, 2020");
+
+/* Aula 14: Hardware e software */
+q("inf",4,"Hardware e software",
+"Um professor vai ligar o notebook ao projetor (datashow) da sala. São padrões de conexão de VÍDEO:",
+["HDMI, P2 e VGA.","VGA, USB e SATA.","Serial, SATA e VGA.","HDMI, DVI e VGA."],3,
+"VGA (analógico, conector azul), DVI e HDMI (digitais; o HDMI leva também o áudio) transmitem imagem. P2 é o conector de áudio de fone, SATA liga discos dentro do computador e USB é de uso geral.",
+"P2 é áudio; SATA é disco.",
+[],["in14","vinf"]); SRC("IBGP, Pref. Uberaba/MG, 2023");
+
+q("inf",4,"Hardware e software",
+"Um pen drive de 16 GB, vazio, vai receber arquivos de 400 KB cada. O número máximo de arquivos que cabem nele fica mais próximo de:",
+["400.","4.000.","40.000.","400.000."],2,
+"16 GB = 16 × 1.024 × 1.024 KB = 16.777.216 KB. Dividindo por 400 KB, cabem cerca de 41.900 arquivos, ou seja, na casa dos 40.000. (Com a conta aproximada em base 1.000: 16.000.000 ÷ 400 = 40.000.)",
+"Cada degrau (KB, MB, GB, TB) multiplica por 1.024, cerca de mil.",
+[],["in14","vinf"]); SRC("IBGP, SEJUSP/MG, 2021");
+
+q("inf",4,"Hardware e software",
+"Sobre o hardware, é INCORRETO afirmar que:",
+["scanner, gabinete e multifuncional são exemplos dele.","suas peças podem ser trocadas por outras.","é a parte lógica do computador.","pode se desgastar com o tempo."],2,
+"Hardware é a parte física (o que se pode tocar). A parte lógica (programas, sistemas, arquivos) é o software.",
+"Físico = hardware; lógico = software.",
+[],["in14","vinf"]); SRC("IBGP, Pref. São João del-Rei/MG, 2021");
+
+q("inf",4,"Hardware e software",
+"Um anúncio diz: 'Notebook Intel Core i7, 4 GB, 1 TB'. Os três dados se referem, nessa ordem, a:",
+["processador, memória de vídeo e disco rígido.","memória RAM, processador e disco rígido.","processador, memória RAM e memória de vídeo.","processador, memória RAM e disco rígido."],3,
+"Core i7 é o processador; 4 GB é a memória RAM, de trabalho; 1 TB é o armazenamento (HD ou SSD). Em anúncios, o número menor em GB costuma ser a RAM, e o maior (TB) o disco.",
+"RAM em GB; armazenamento em centenas de GB ou TB.",
+[],["in14","vinf"]); SRC("IBGP, Pref. Dores do Indaiá/MG, 2021");
+
+q("inf",4,"Hardware e software",
+"'Memória muito rápida e cara, usada para guardar temporariamente os dados que o processador mais usa.' O trecho define a memória:",
+["cache.","EEPROM.","ROM.","RAM."],0,
+"A cache fica junto do processador e guarda cópias do que ele usa com frequência, evitando buscar na RAM, que é mais lenta. Na ordem de velocidade: registradores > cache > RAM > disco.",
+"Cache trabalha colada ao processador.",
+[],["in14","vinf"]); SRC("IBGP, Pref. Itabira/MG, 2021");
+
+q("inf",4,"Hardware e software",
+"No anúncio 'Notebook Intel Core i5, 4 GB, 1 TB, tela LED 15,6\", Windows 10', as referências 1 TB e i5 correspondem, respectivamente, a:",
+["microprocessador e disco rígido.","disco rígido e memória.","memória e disco rígido.","disco rígido e microprocessador."],3,
+"1 TB é a capacidade do disco (armazenamento) e i5 é o modelo do processador Intel. Repare na ordem pedida: primeiro o 1 TB, depois o i5.",
+"Questão de ordem: confira 'respectivamente'.",
+[],["in14","vinf"]); SRC("IBGP, Pref. Itabira/MG, 2021");
+
+/* Aula 15: Inteligência Artificial */
+q("inf",4,"Inteligência Artificial",
+"Em 2023 se popularizou no Brasil o uso de máquinas que executam tarefas e tomam decisões por algoritmos, como os assistentes que conversam de forma quase humana. Esse conceito é o de:",
+["Realidade Virtual.","Inteligência Artificial.","Internet das Coisas.","Computação em Nuvem."],1,
+"Chatbots que simulam conversa humana (ChatGPT, Copilot, Gemini) são aplicações de Inteligência Artificial. Realidade Virtual cria ambientes imersivos; Internet das Coisas liga objetos à rede; nuvem é a oferta de recursos de computação pela internet.",
+"Simular raciocínio ou conversa humana = IA.",
+[],["in15","vinf"]); SRC("COTEC, Pref. Limeira do Oeste/MG, 2024");
+
+q("inf",4,"Inteligência Artificial",
+"Ferramentas como o ChatGPT podem ser classificadas como:",
+["bancos de dados.","algoritmos determinísticos de automação industrial.","sistemas de aprendizado de máquina e processamento de linguagem natural.","modelos criptográficos de segurança digital."],2,
+"São grandes modelos de linguagem (LLM): aprenderam padrões a partir de enormes volumes de texto (aprendizado de máquina) e entendem e geram linguagem humana (PLN). Não consultam um banco de dados com respostas prontas, e a mesma pergunta pode ter respostas diferentes.",
+"IA generativa não é determinística: a resposta pode variar.",
+[],["in15","vinf"]); SRC("FAFIPA, Pref. Araucária/PR, 2025");
+
+q("inf",4,"Inteligência Artificial",
+"Na IA generativa, a engenharia de prompt serve para:",
+["orientar a IA a produzir resultados desejados, relevantes e de qualidade.","construir modelos especialistas para cada contexto.","fazer o ajuste fino (fine tuning) do modelo.","aumentar a velocidade de resposta do modelo."],0,
+"Engenharia de prompt é escrever bem o pedido: contexto, papel, formato da resposta, exemplos e limites. Ela não muda o modelo; fine tuning, sim, retreina o modelo com dados novos.",
+"Prompt muda o pedido; fine tuning muda o modelo.",
+[],["in15","vinf"]); SRC("Instituto Ágata, Pref. Piçarra/PA, 2025");
+
+q("inf",4,"Inteligência Artificial",
+"O TSE proibiu nas eleições o uso de um recurso que cria vídeos falsos trocando ou combinando rosto e voz de uma pessoa, sincronizando lábios e expressões, para fingir que ela disse ou fez algo. Esse recurso é o:",
+["moviefake.","fake face.","deepfake.","fakeperson."],2,
+"Deepfake usa IA (aprendizado profundo, deep learning) para fabricar vídeos e áudios falsos muito realistas. É usado em golpes, desinformação e fraudes; desconfie de vídeos com pedidos de dinheiro ou dados.",
+"Deep vem de deep learning, a técnica de IA usada.",
+[],["in15","vinf"]); SRC("Instituto Abaré-eté, Pref. São Gabriel da Cachoeira/AM, 2024");
+
+q("inf",4,"Inteligência Artificial",
+"O conceito fundamental para criar sistemas de IA que aprendem e se adaptam a partir de dados é:",
+["algoritmos de criptografia.","redes de computadores.","aprendizado de máquina.","programação orientada a objetos."],2,
+"Aprendizado de máquina (machine learning) é a área da IA em que o sistema aprende padrões com exemplos, em vez de seguir só regras escritas à mão. Deep learning é um tipo de aprendizado de máquina com redes neurais de muitas camadas.",
+"Aprender com dados = machine learning.",
+[],["in15","vinf"]); SRC("DECORP, Pref. Feijó/AC, 2024");
+
+q("inf",4,"Inteligência Artificial",
+"Na interação com a IA generativa, o prompt é:",
+["um conjunto de algoritmos que melhora a precisão do modelo.","um texto em linguagem natural que orienta a IA a executar uma tarefa e gerar o conteúdo.","uma interface que dispensa o uso de linguagem natural.","o banco de dados onde a IA guarda as respostas."],1,
+"Prompt é a instrução escrita pelo usuário em linguagem comum (pergunta, pedido, contexto). O modelo, já treinado, gera o conteúdo a partir dela.",
+"Prompt = o pedido que você digita.",
+[],["in15","vinf"]); SRC("IBFC, TRF 5ª Região, 2024");
+
+/* Aula 16: Teams */
+q("inf",2,"Teams",
+"Sobre a colaboração em documentos no Microsoft Teams, julgue (V ou F): ( ) O Teams só trabalha com documentos do Word e do Excel. ( ) Vários usuários podem editar ao mesmo tempo um documento compartilhado. ( ) O Teams se integra a outros serviços, como o SharePoint. A sequência correta é:",
+["F, V, V.","F, F, V.","V, V, V.","V, F, F."],0,
+"O Teams abre e permite coeditar arquivos do Word, Excel e PowerPoint, além de exibir PDFs e outros formatos. Os arquivos de cada equipe ficam guardados no SharePoint; os do chat, no OneDrive.",
+"Arquivos da equipe ficam no SharePoint; os do chat, no OneDrive.",
+["ms"],["in16","vinf"]); SRC("Instituto Access, Pref. Itaguara/MG, 2024");
+
+q("inf",2,"Teams",
+"Complete, na ordem: ______ são grupos de pessoas, conteúdos e ferramentas em torno de projetos; ______ podem ser padrão, compartilhados ou privados; ______ podem ser públicas, permitindo que qualquer pessoa da organização entre.",
+["Canais / Canais / Equipes","Equipes / Canais / Equipes","Equipes / Equipes / Canais","Canais / Equipes / Canais"],1,
+"A Equipe é o grupo maior (pública ou privada). Dentro dela ficam os Canais, que dividem os assuntos e podem ser padrão (todos da equipe), compartilhados (com gente de fora da equipe) ou privados (só alguns membros).",
+"Equipe contém canais, nunca o contrário.",
+["ms"],["in16","vinf"]); SRC("Vunesp, Pref. Campinas/SP, 2025");
+
+q("inf",2,"Teams",
+"No Microsoft Teams, o recurso que reúne todas as suas menções, respostas e demais notificações é:",
+["Chat.","Canal.","Tarefas.","Atividade."],3,
+"O feed de Atividade (ícone de sino) concentra @menções, respostas, curtidas e avisos de canais. O Chat é para conversas individuais ou em grupo; o Canal é o espaço de cada assunto dentro de uma equipe.",
+"Sino = Atividade.",
+["ms"],["in16","vinf"]); SRC("Consulplan, Câmara de Araraquara/SP, 2025");
+
+q("inf",2,"Teams",
+"No Microsoft Teams, o espaço dentro de uma equipe onde os membros conversam e compartilham arquivos sobre um assunto específico é o:",
+["canal.","chat privado.","reunião.","grupo de e-mail."],0,
+"Cada equipe se divide em canais (por exemplo, 'Escalas', 'Ocorrências'), cada um com conversas, arquivos e abas próprios. Todo time começa com o canal Geral.",
+"Assunto específico dentro da equipe = canal.",
+["ms"],["in16","vinf"]); SRC("PROMUN, Pref. Campos do Jordão/SP, 2025");
+
+q("inf",2,"Teams",
+"Sobre uma Equipe no Microsoft Teams, é correto afirmar que ela:",
+["precisa ter um chefe cadastrado como organizador.","só pode ter um chat.","só aceita pessoas da mesma organização.","aceita membro externo à organização apenas na categoria de convidado."],3,
+"Pessoas de fora entram como convidados, com permissões mais restritas que as dos membros. Cada equipe tem proprietários (que administram), membros e, se permitido, convidados.",
+"Proprietário administra; membro participa; convidado vem de fora.",
+["ms"],["in16","vinf"]); SRC("Vunesp, Pref. Monte Alto/SP, 2024");
+
+q("inf",2,"Teams",
+"O software de reuniões on-line que tem integração nativa com o OneDrive, por ser da mesma empresa, é o:",
+["Zoom.","WhatsApp.","Google Meet.","Microsoft Teams."],3,
+"Teams e OneDrive são da Microsoft e fazem parte do Microsoft 365, junto com Outlook, SharePoint, Word e Excel. O Google Meet se integra ao Google Drive.",
+"Microsoft com Microsoft; Google com Google.",
+["ms"],["in16","vinf"]); SRC("IDECAN, Pref. Mossoró/RN, 2024");
+
+/* Aula 17: Redes sociais */
+q("inf",4,"Redes sociais",
+"São exemplos de redes sociais na internet:",
+["Facebook, Hotmail e Twitter.","Skype, Facebook e Gmail.","Flickr, LinkedIn e Gmail.","LinkedIn, Facebook e Twitter."],3,
+"LinkedIn, Facebook e Twitter (hoje X) são redes sociais: perfis, conexões e publicações. Hotmail (Outlook.com) e Gmail são serviços de e-mail; Skype é de chamadas e mensagens.",
+"E-mail não é rede social.",
+[],["in17","vinf"]); SRC("IBGP, CISSUL/MG, 2017");
+
+q("inf",4,"Redes sociais",
+"São exemplos de redes sociais:",
+["Twitter, Bing, TikTok e Google.","Facebook, Instagram, LinkedIn e Twitter.","Bing, Instagram, Facebook e YouTube.","Instagram, TikTok, Google e Gmail."],1,
+"Todas as da opção certa são redes sociais. Bing e Google são buscadores e Gmail é e-mail, o que derruba as outras opções.",
+"Basta um intruso (buscador, e-mail) para eliminar a alternativa.",
+[],["in17","vinf"]); SRC("Cebraspe, Pref. São Cristóvão/SE, 2023");
+
+q("inf",4,"Redes sociais",
+"O termo 'hashtag', muito usado nas redes sociais, está associado ao símbolo:",
+["# (cerquilha ou jogo da velha).","@ (arroba).","& (e comercial).","% (porcentagem)."],0,
+"A hashtag (#tema) agrupa publicações sobre o mesmo assunto e vira link clicável. A arroba (@nome) serve para mencionar uma pessoa ou perfil.",
+"# marca assunto; @ marca pessoa.",
+[],["in17","vinf"]); SRC("IBFC, MGS/MG, 2024");
+
+q("inf",4,"Redes sociais",
+"Para usar o WhatsApp no computador (WhatsApp Web), o reconhecimento entre o computador e o celular é feito por meio de:",
+["senha do WhatsApp.","cabo USB ligando os aparelhos.","código numérico enviado por e-mail.","QR code exibido no computador e lido pela câmera do celular."],3,
+"Em Aparelhos conectados, no celular, lê-se o QR code mostrado em web.whatsapp.com (há também a opção de vincular com o número de telefone). Golpistas pedem fotos desse QR code para clonar a sessão: nunca envie a ninguém.",
+"Quem lê o seu QR code passa a ver suas conversas.",
+[],["in17","vinf"]); SRC("FGV, SEFAZ/AM, 2022");
+
+q("inf",4,"Redes sociais",
+"Uma empresa quer uma rede social voltada ao mundo profissional, para fazer contatos, divulgar vagas e procurar profissionais no mercado. A mais indicada é o:",
+["Skype.","Instagram.","LinkedIn.","TikTok."],2,
+"O LinkedIn é a rede profissional: currículo (experiência, formação), vagas, páginas de empresas e networking. Instagram e TikTok focam em fotos e vídeos curtos de entretenimento.",
+"Currículo e vagas = LinkedIn.",
+[],["in17","vinf"]); SRC("Cesgranrio, Banco do Brasil, 2023");
+
+q("inf",4,"Redes sociais",
+"Um aplicativo chinês, da empresa ByteDance, ficou entre os mais baixados do mundo em 2019 depois de se fundir com o antigo Musical.ly, sendo famoso pelos vídeos curtos. Trata-se do:",
+["Snapchat.","TikTok.","Kwai.","Pinterest."],1,
+"O TikTok, da ByteDance, popularizou os vídeos curtos verticais com música e efeitos. O Kwai é um concorrente de outra empresa chinesa; o Snapchat é americano e conhecido pelas mensagens que somem.",
+"ByteDance + Musical.ly = TikTok.",
+[],["in17","vinf"]); SRC("FCC, SABESP, 2019");
