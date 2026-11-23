@@ -1,5 +1,13 @@
 // Novidades: a entrada mais recente fica no topo. Cada nova adição ao app ganha um id novo (maior que o anterior).
 const NEWS = [
+  { id: 10, data: "23/11/2026", titulo: "+31 questões de Informática",
+    itens: [
+      "Windows 10: atalhos com a tecla Win, Gerenciador de Tarefas e impressoras",
+      "Hardware: conectores de vídeo, memória cache e anúncios de notebook",
+      "Inteligência Artificial, prompts e deepfake",
+      "Teams (equipes e canais) e redes sociais"
+    ],
+    total: 847 },
   { id: 9, data: "23/11/2026", titulo: "+26 questões de Informática",
     itens: [
       "Backup: completo, incremental, diferencial, delta, RPO e RTO",
