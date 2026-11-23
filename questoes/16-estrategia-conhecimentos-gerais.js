@@ -229,3 +229,168 @@ q("cg",3,"Atualidades: meio ambiente e sociedade",
 "Com menos filhos por mulher (fecundidade abaixo de 2,1, o nível de reposição) e pessoas vivendo mais, a pirâmide etária estreita na base e alarga no topo. O Censo é feito pelo IBGE.",
 "Envelhecimento = base da pirâmide estreita, topo alarga.",
 ["ibge"],["cg4","vcg"]); SRC("FGV, Pref. São José dos Campos/SP, 2023");
+
+/* Aula 05: Panorama nacional III */
+q("cg",3,"Atualidades: saúde pública",
+"Minas Gerais se preparou para mais um ano epidêmico de dengue e chikungunya. Essas doenças são transmitidas por:",
+["consumo de água contaminada.","contato com pessoas doentes.","picada do mosquito transmissor.","via respiratória."],2,
+"Dengue, chikungunya e zika são transmitidas pela picada da fêmea do Aedes aegypti infectada. A água parada não transmite a doença, mas é onde o mosquito se reproduz; por isso eliminar criadouros é a principal prevenção.",
+"Água parada cria o mosquito; quem transmite é a picada.",
+[],["cg5","vcg"]); SRC("FUNDEP, Pref. Carlos Chagas/MG, 2024");
+
+q("cg",3,"Atualidades: saúde pública",
+"O Aedes aegypti transmite as seguintes arboviroses, EXCETO:",
+["dengue.","chikungunya.","zika.","meningite."],3,
+"Arboviroses são doenças virais transmitidas por artrópodes, como mosquitos: dengue, zika, chikungunya e febre amarela urbana. A meningite é uma inflamação das meninges causada por bactérias, vírus ou fungos, sem mosquito envolvido.",
+"Meningite não tem mosquito no meio.",
+[],["cg5","vcg"]); SRC("FUNDATEC, Pref. Iraí/RS, 2024");
+
+q("cg",3,"Atualidades: saúde pública",
+"A principal ferramenta de prevenção e controle da febre amarela oferecida pelo SUS é a:",
+["alimentação.","vacina.","reclusão social.","transfusão de sangue."],1,
+"A vacina contra a febre amarela é gratuita no SUS, faz parte do calendário de rotina e, em dose única para adultos, protege por toda a vida. Para dengue, a vacina do SUS é oferecida a grupos e idades específicos.",
+"Febre amarela: vacina; dengue: combate ao mosquito em primeiro lugar.",
+[],["cg5","vcg"]); SRC("Objetiva, Pref. Pato Bragado/PR, 2024");
+
+q("cg",3,"Atualidades: segurança pública",
+"Complete: o perfil da população carcerária brasileira é de jovens adultos, predominantemente do sexo ______, com baixa escolaridade, presos principalmente por crimes ______.",
+["masculino / de estupro e corrupção","masculino / contra o patrimônio e tráfico de drogas","feminino / contra o patrimônio e tráfico de drogas","feminino / de racismo e injúria"],1,
+"Segundo os dados oficiais (Senappen e Fórum Brasileiro de Segurança Pública), a grande maioria dos presos é homem, jovem, negro e com pouca escolaridade, e os crimes mais comuns são roubo, furto e tráfico de drogas.",
+"Patrimônio (roubo, furto) e drogas lideram as prisões.",
+[],["cg5","vcg"]); SRC("Objetiva, Câmara de Santo Antônio das Missões/RS, 2024");
+
+q("cg",3,"Atualidades: segurança pública",
+"O protocolo 'Não é Não', criado no fim de 2023 e transformado em lei, tem como objetivo:",
+["prevenir o constrangimento e a violência contra a mulher em espaços públicos, como casas noturnas e shows.","evitar que vendedores insistam com mulheres.","reduzir a violência doméstica.","garantir o direito de manifestação das mulheres."],0,
+"A Lei 14.786/2023 criou o protocolo 'Não é Não' para casas noturnas, boates, shows e eventos esportivos com venda de bebida: o local deve acolher a mulher que sofre assédio ou violência, afastá-la do agressor e acionar a polícia. Violência doméstica é tema da Lei Maria da Penha.",
+"Espaço de lazer e eventos = Não é Não; ambiente doméstico = Maria da Penha.",
+[],["cg5","vcg"]); SRC("FUNDEP, Pref. Manhuaçu/MG, 2024");
+
+q("cg",3,"Atualidades: segurança pública",
+"A violência sexual no Brasil é, na maioria das vezes, cometida por conhecidos da vítima. Segundo os registros policiais, as vítimas de estupro e estupro de vulnerável são, em sua maioria:",
+["idosos.","crianças e adolescentes.","adultos.","jovens entre 16 e 25 anos."],1,
+"Os dados do Fórum Brasileiro de Segurança Pública mostram que a maior parte das vítimas tem menos de 14 anos (estupro de vulnerável), e o agressor costuma ser parente ou conhecido. Por isso a escola e a rede de proteção são essenciais para identificar os casos.",
+"O agressor costuma estar dentro de casa ou ser conhecido.",
+[],["cg5","vcg"]); SRC("Objetiva, Pref. Itaipulândia/PR, 2024");
+
+/* Aula 06: Ecologia e desenvolvimento sustentável */
+q("cg",2,"Meio ambiente",
+"Há anos se discute no Brasil a tese de que os povos indígenas só podem reivindicar as terras que ocupavam em 5 de outubro de 1988, data da promulgação da Constituição. Essa tese é conhecida como:",
+["Fundação Nacional dos Povos Indígenas.","terra indígena.","demarcação de terras indígenas.","marco temporal."],3,
+"O marco temporal liga o direito à terra à ocupação em 5/10/1988. Em 2023 o STF julgou a tese inconstitucional, mas o Congresso aprovou a Lei 14.701/2023 adotando-a, e o tema voltou ao Supremo. Funai é o órgão federal da política indigenista.",
+"Marco = data (5/10/1988); temporal = ligado ao tempo.",
+[],["cg6","vcg"]); SRC("FUNDEP, Pref. Lavras/MG, 2023");
+
+q("cg",2,"Meio ambiente",
+"Segundo especialistas, o principal fator ligado ao aumento do desmatamento na Amazônia é:",
+["a construção de grandes cidades na região.","o garimpo artesanal, apenas.","a expansão do turismo.","a pecuária extensiva e a expansão da agricultura de exportação."],3,
+"A maior parte da área desmatada vira pasto. O ciclo costuma ser: grilagem de terra pública, extração ilegal de madeira, queimada e depois gado ou lavoura. O garimpo ilegal também destrói e contamina rios com mercúrio, mas ocupa área menor.",
+"Na Amazônia, desmatar costuma virar pasto.",
+[],["cg6","vcg"]); SRC("Instituto Access, Pref. Itaguara/MG, 2024");
+
+q("cg",2,"Meio ambiente",
+"Os Objetivos de Desenvolvimento Sustentável (ODS) da ONU, com horizonte em 2030, abrangem os temas abaixo, EXCETO:",
+["erradicação da pobreza e da fome.","igualdade de gênero.","acesso à justiça e promoção da paz.","incentivo à fragmentação ambiental."],3,
+"A Agenda 2030 tem 17 ODS, entre eles fome zero, educação de qualidade, igualdade de gênero, ação climática e paz e justiça. Fragmentar ambientes (dividir florestas e habitats) é o contrário do que a agenda busca.",
+"São 17 objetivos; todos buscam proteger pessoas e ambiente.",
+[],["cg6","vcg"]); SRC("FGV, Câmara de Taubaté/SP, 2022");
+
+q("cg",2,"Meio ambiente",
+"No mercado em que se compram e vendem permissões para emitir gases poluentes, geradas por projetos que reduzem emissões (reflorestamento, energia limpa, preservação), essas permissões são chamadas de:",
+["autorizações de impacto neutro.","créditos de carbono.","selos de compensação florestal.","certificados de origem."],1,
+"Cada crédito de carbono equivale, em geral, a uma tonelada de CO2 que deixou de ser emitida ou foi retirada da atmosfera. O Brasil criou seu mercado regulado de carbono (SBCE) pela Lei 15.042/2024.",
+"1 crédito = 1 tonelada de CO2 evitada.",
+[],["cg6","vcg"]); SRC("Instituto Access, Pref. Apiaí/SP, 2025");
+
+q("cg",2,"Meio ambiente",
+"Qual destes foi o marco do compromisso global com metas de redução de emissões de carbono?",
+["Conferência de Bretton Woods.","Cúpula de Helsinque.","Acordo de Paris.","Tratado de Versalhes."],2,
+"O Acordo de Paris (COP21, 2015) fixou a meta de limitar o aquecimento a bem menos de 2 °C, buscando 1,5 °C, com metas nacionais de cada país (NDC). Bretton Woods criou o FMI e o Banco Mundial; Versalhes encerrou a Primeira Guerra.",
+"Paris 2015 = clima; Quioto 1997 = acordo anterior.",
+[],["cg6","vcg"]); SRC("Instituto Access, Pref. Marechal Floriano/ES, 2025");
+
+q("cg",2,"Meio ambiente",
+"O que é o efeito estufa e qual a sua relação com o uso de energia?",
+["É a geração de eletricidade a partir do calor da superfície.","É a técnica de guardar carbono no subsolo.","É um processo natural que mantém a temperatura da Terra, intensificado pela queima de combustíveis fósseis.","É o uso de energia renovável para manter a temperatura estável."],2,
+"Sem efeito estufa a Terra seria gelada. O problema é o excesso de gases (CO2, metano) lançados pela queima de petróleo, carvão e gás e pelo desmatamento, que retém mais calor e causa o aquecimento global.",
+"O efeito estufa é natural; o que preocupa é a intensificação.",
+[],["cg6","vcg"]); SRC("Objetiva, Pref. Rio Negro/PR, 2025");
+
+/* Aula 07: Humanidades: movimentos artísticos, culturais e sociais */
+q("cg",2,"Cultura e artes",
+"A Igreja de São Francisco de Assis, conhecida como Igreja da Pampulha, obra do arquiteto Oscar Niemeyer, fica em:",
+["Rio de Janeiro.","Brasília.","Belo Horizonte.","São Paulo."],2,
+"O Conjunto Moderno da Pampulha, em Belo Horizonte, foi encomendado por Juscelino Kubitschek quando era prefeito, nos anos 1940, com painéis de Portinari e jardins de Burle Marx. É Patrimônio Mundial da UNESCO desde 2016.",
+"Pampulha veio antes de Brasília: foi a 'estreia' de Niemeyer com JK.",
+[],["cg7","vcg"]); SRC("Cesgranrio, Agente de Pesquisas e Mapeamento IBGE, 2014");
+
+q("cg",2,"Cultura e artes",
+"Ícone do cinema mudo, foi ator, diretor e produtor. Seu personagem mais famoso, 'o Vagabundo', misturava comédia sentimental e crítica social. Trata-se de:",
+["Buster Keaton.","Georges Méliès.","Louis Lumière.","Charles Chaplin."],3,
+"Charles Chaplin criou Carlitos, o Vagabundo, em 1914, e criticou a sociedade industrial em filmes como 'Tempos Modernos' (1936). Méliès foi pioneiro dos efeitos especiais e os irmãos Lumière inventaram o cinematógrafo.",
+"Vagabundo de chapéu-coco e bengala = Chaplin.",
+[],["cg7","vcg"]); SRC("Cetro, Agente Administrativo CREF 4, 2013");
+
+q("cg",2,"Cultura e artes",
+"O primeiro canal de televisão do Brasil, que entrou no ar em 1950 por iniciativa de Assis Chateaubriand, foi a:",
+["TV Paulista.","TV Record.","TV Tupi.","TV Itacolomi."],2,
+"A TV Tupi foi inaugurada em São Paulo em setembro de 1950 e foi a primeira emissora da América do Sul. Saiu do ar em 1980. A TV Itacolomi, de Belo Horizonte, também era dos Diários Associados de Chateaubriand.",
+"Chateaubriand + 1950 = TV Tupi.",
+[],["cg7","vcg"]); SRC("Cetro, Agente Administrativo CREF 4, 2013");
+
+q("cg",2,"Cultura e artes",
+"O movimento musical dos anos 1960, nascido de um programa de TV, ligado ao rock em versão mais romântica e liderado por Roberto Carlos, Erasmo Carlos e Wanderléa, chamou-se:",
+["Jovem Guarda.","Tropicalismo.","Clube da Esquina.","Mangue Beat."],0,
+"A Jovem Guarda leva o nome do programa da TV Record de 1965. O Tropicalismo (Caetano, Gil) veio em 1967 e 1968; o Clube da Esquina é mineiro (Milton Nascimento, Lô Borges); o Mangue Beat é pernambucano dos anos 1990 (Chico Science).",
+"Clube da Esquina é o movimento de Minas Gerais.",
+[],["cg7","vcg"]); SRC("Cetro, Agente Administrativo CREF 4, 2013");
+
+q("cg",2,"Cultura e artes",
+"Arquitetura guiada pela religião, que se expressou sobretudo nas igrejas, afastou-se da tradição greco-romana e recebeu influência persa, tendo como exemplo a Catedral de Santa Sofia. Trata-se da arquitetura:",
+["gótica.","bizantina.","islâmica.","modernista."],1,
+"Santa Sofia (Hagia Sophia), em Istambul, antiga Constantinopla, é o grande símbolo bizantino: cúpula enorme e mosaicos dourados. A gótica, de arcos ogivais e vitrais, é da Europa Ocidental medieval.",
+"Constantinopla = Bizâncio = arte bizantina.",
+[],["cg7","vcg"]); SRC("Cetro, Atendente CREF 4, 2013");
+
+q("cg",2,"Cultura e artes",
+"O historiador autor de 'Raízes do Brasil' (1936), livro que critica a herança ibérica na formação nacional e apresenta a ideia do 'homem cordial', é:",
+["Anísio Teixeira.","Miguel Reale.","Sérgio Buarque de Holanda.","Gilberto Freyre."],2,
+"Sérgio Buarque de Holanda (pai do compositor Chico Buarque) escreveu 'Raízes do Brasil'. Gilberto Freyre escreveu 'Casa-Grande & Senzala' (1933); Anísio Teixeira foi educador e Miguel Reale, jurista.",
+"Raízes do Brasil = Sérgio Buarque; Casa-Grande & Senzala = Gilberto Freyre.",
+[],["cg7","vcg"]); SRC("IESES, Notário e Registrador TJ/RS, 2013");
+
+/* Aula 08: Noções de cidadania */
+q("cg",1,"Cidadania",
+"A Constituição de 1988, elaborada pela Assembleia Nacional Constituinte instalada em 1987, no fim da ditadura militar, e presidida por Ulysses Guimarães, ficou conhecida como Constituição:",
+["Transformadora.","Transitiva.","Cidadã.","Antiautoritária."],2,
+"Ao promulgá-la, em 5 de outubro de 1988, Ulysses Guimarães a chamou de 'Constituição Cidadã', pela ampla garantia de direitos fundamentais e sociais e pela participação popular na sua elaboração.",
+"Ulysses Guimarães + 1988 = Constituição Cidadã.",
+["cf"],["cg8","vcg"]); SRC("FADESP, BANPARÁ, 2018");
+
+q("cg",1,"Cidadania",
+"O termo cidadania é melhor explicado como:",
+["a afirmação de um indivíduo diante da sociedade e do Estado.","a condição do indivíduo como membro de um Estado, com direitos e obrigações.","a troca recíproca de ideias e atos entre indivíduos e grupos.","as maneiras de agir, sentir e pensar próprias de um grupo."],1,
+"Cidadania é o vínculo da pessoa com o Estado, que lhe dá direitos (civis, políticos e sociais) e também deveres (cumprir leis, votar, pagar tributos). A alternativa D descreve cultura.",
+"Cidadania = direitos E deveres.",
+[],["cg8","vcg"]); SRC("UNICENTRO, 2012");
+
+q("cg",1,"Cidadania",
+"A Constituição brasileira apresenta entre os fundamentos da República:",
+["a liberdade de qualquer cidadão ser candidato.","a cidadania, a soberania e a dignidade da pessoa humana.","a existência de partidos que disputem eleições pelo critério majoritário.","uma sociedade uniforme quanto à composição da população."],1,
+"O art. 1º da CF traz cinco fundamentos: soberania, cidadania, dignidade da pessoa humana, valores sociais do trabalho e da livre iniciativa, e pluralismo político (a sigla SOCIDIVAPLU ajuda a lembrar).",
+"Fundamentos (art. 1º) não são objetivos (art. 3º): SOCIDIVAPLU.",
+["cf"],["cg8","vcg"]); SRC("FGV, TRE/PA, 2011");
+
+q("cg",1,"Cidadania",
+"A respeito da cidadania, está correto afirmar que:",
+["a cidadania plena se resume a votar em eleições diretas.","na Grécia e na Roma antigas, a cidadania era dada a homens e mulheres livres.","no Brasil, só quem tem mais de 18 anos é cidadão.","ser cidadão é ter consciência de seus direitos e deveres, com responsabilidades e limites na sociedade."],3,
+"Votar é só uma parte da cidadania. Na Antiguidade, mulheres, estrangeiros e escravizados ficavam de fora. No Brasil, o voto é facultativo a partir dos 16 anos, e direitos civis e sociais valem para todos, de qualquer idade.",
+"Cidadania vai muito além do voto.",
+[],["cg8","vcg"]); SRC("UNICENTRO, 2011");
+
+q("cg",1,"Cidadania",
+"As políticas de proteção social nascem da contradição entre uma economia que reproduz a miséria e uma ordem política que afirma a igualdade entre os cidadãos. Nesse contexto, a cidadania plena:",
+["é um projeto de redefinição das relações sociais rumo à redistribuição de renda, à equidade e à justiça social.","se limita à garantia de direitos difusos pelo Estado.","depende apenas de políticas assistenciais contributivas.","é alcançada quando se assegura o direito ao voto."],0,
+"Cidadania plena exige direitos civis, políticos E sociais efetivos (saúde, educação, renda). Por isso está ligada à redução das desigualdades e à justiça social, não só à igualdade escrita na lei.",
+"Igualdade formal (na lei) não basta: a cidadania plena busca igualdade real.",
+[],["cg8","vcg"]); SRC("FCC, TJ/PE, 2012");
