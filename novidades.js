@@ -1,5 +1,13 @@
 // Novidades: a entrada mais recente fica no topo. Cada nova adição ao app ganha um id novo (maior que o anterior).
 const NEWS = [
+  { id: 12, data: "23/11/2026", titulo: "+23 questões de Conhecimentos Gerais",
+    itens: [
+      "Saúde e segurança pública: dengue, febre amarela, Não é Não",
+      "Meio ambiente: marco temporal, Acordo de Paris, créditos de carbono",
+      "Cultura: Pampulha, Jovem Guarda, TV Tupi e Raízes do Brasil",
+      "Cidadania e a Constituição Cidadã"
+    ],
+    total: 900 },
   { id: 11, data: "23/11/2026", titulo: "+30 questões de Conhecimentos Gerais",
     itens: [
       "Mercosul, União Europeia e Brexit",
