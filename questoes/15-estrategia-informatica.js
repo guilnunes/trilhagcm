@@ -413,3 +413,189 @@ q("inf",3,"Malware e golpes",
 "DoS é negação de serviço: inundar o alvo de requisições até ele cair ou ficar lento. No DDoS o ataque parte de muitas máquinas ao mesmo tempo, normalmente uma botnet. E-mails falsos são phishing; tentativa e erro de senha é força bruta.",
 "DDoS não rouba dados: derruba o serviço.",
 [],["in8","vinf"]); SRC("FGV, Policial Legislativo Senado Federal, 2022");
+
+/* Aula 09: Backup */
+q("inf",3,"Backup",
+"Complete: o(a) ______ é o mecanismo de segurança que permite recuperar dados perdidos por acidente.",
+["backup","criptografia","stand by","top file"],0,
+"Backup é a cópia de segurança guardada em outro lugar (HD externo, nuvem) para restaurar os arquivos depois de exclusão, defeito ou ataque. Criptografia protege o sigilo, mas não recupera nada.",
+"Recuperar o que se perdeu = backup.",
+[],["in9","vinf"]); SRC("IBGP, Pref. Uberaba/MG, 2019");
+
+q("inf",3,"Backup",
+"Sobre o backup do tipo DELTA, é correto afirmar que ele:",
+["copia todos os dados de um servidor para outro local.","guarda só a diferença entre a versão atual e a anterior de cada arquivo.","copia os arquivos alterados desde o último backup completo.","é sempre feito em dispositivo físico externo, como HD externo."],1,
+"O delta não copia o arquivo inteiro: grava apenas os trechos (blocos) que mudaram entre uma versão e outra, o que economiza espaço. Copiar tudo é o backup completo; copiar arquivos alterados desde o último completo é o diferencial.",
+"Delta = só a parte que mudou DENTRO do arquivo.",
+[],["in9","vinf"]); SRC("IBGP, Pref. Dores do Indaiá/MG, 2021");
+
+q("inf",3,"Backup",
+"A prefeitura usa backup completo seguido de backups DIFERENCIAIS. Para recuperar os dados, o técnico precisa de:",
+["apenas o último diferencial.","o último completo e o último diferencial.","o último completo e todos os diferenciais.","apenas o último completo."],1,
+"Cada diferencial guarda tudo o que mudou desde o último completo; por isso o último diferencial já contém os anteriores. Basta restaurar o completo e, em seguida, o diferencial mais recente. No incremental, seriam necessários o completo e TODOS os incrementais.",
+"Diferencial: 2 peças. Incremental: o completo + todos os incrementais.",
+[],["in9","vinf"]); SRC("FCC, Assistente de TI Pref. Manaus/AM, 2019");
+
+q("inf",3,"Backup",
+"Uma empresa faz backup completo aos domingos. De segunda a sábado, copia só os arquivos alterados ou criados em relação ao backup do DIA ANTERIOR. Esses backups diários são:",
+["completos.","incrementais.","diferenciais.","espelhos."],1,
+"Comparar com o backup anterior, de qualquer tipo, é incremental (cada dia guarda só o daquele dia). Se comparasse sempre com o último completo (domingo), seria diferencial.",
+"Referência = backup de ontem? Incremental. Referência = último completo? Diferencial.",
+[],["in9","vinf"]); SRC("Vunesp, Câmara de Piracicaba/SP, 2019");
+
+q("inf",3,"Backup",
+"A política de backup de uma empresa exige, acima de tudo, o MENOR TEMPO DE RESTAURAÇÃO. Deve-se escolher o backup:",
+["completo.","diferencial com incremental.","incremental.","progressivo."],0,
+"Com o completo, tudo está numa única cópia e a restauração é direta. Em contrapartida, ele é o que mais ocupa espaço e mais demora para ser feito. O incremental é o oposto: rápido para fazer, mais trabalhoso para restaurar.",
+"Rápido para restaurar = completo; rápido para fazer = incremental.",
+[],["in9","vinf"]); SRC("Vunesp, Pref. Ribeirão Preto/SP, 2018");
+
+q("inf",3,"Backup",
+"É uma prática recomendada em relação a backups:",
+["copiar apenas os dados mais recentes.","guardar todas as cópias no mesmo local.","manter várias cópias em locais diferentes.","fazer backup uma vez por ano para economizar espaço."],2,
+"Cópias em lugares diferentes (por exemplo, uma local e outra na nuvem ou fora do prédio) evitam perder tudo num incêndio, furto ou ataque. É a ideia da regra 3-2-1: 3 cópias, 2 mídias diferentes, 1 fora do local.",
+"Backup no mesmo lugar do original morre junto com ele.",
+[],["in9","vinf"]); SRC("Cebraspe, Polícia Civil/PE, 2024");
+
+q("inf",3,"Backup",
+"Num plano de recuperação de desastres, qual a diferença entre RPO e RTO?",
+["RPO: quantidade máxima de dados que se aceita perder; RTO: tempo máximo para voltar a funcionar.","RPO: frequência dos backups; RTO: ordem de prioridade dos sistemas.","RPO: tempo de replicação dos dados; RTO: tempo para retomar as operações.","RPO: tempo máximo parado; RTO: quantidade máxima de dados perdidos."],0,
+"RPO (ponto de recuperação) responde 'até que momento consigo voltar?', ou seja, quanto dado posso perder; ele define a frequência mínima dos backups. RTO (tempo de recuperação) responde 'em quanto tempo volto a funcionar?'.",
+"P de Point (ponto no passado, dados); T de Time (tempo parado).",
+[],["in9","vinf"]); SRC("Consulplan, Câmara de Poços de Caldas/MG, 2024");
+
+/* Aula 10: Excel */
+q("inf",2,"Excel (Microsoft 365)",
+"No Excel, um secretário quer inserir funções, rastrear precedentes e conferir cálculos. A guia que reúne esses recursos é:",
+["Dados.","Revisão.","Fórmulas.","Exibir."],2,
+"A guia Fórmulas tem a Biblioteca de Funções, os Nomes Definidos e a Auditoria de Fórmulas (rastrear precedentes e dependentes, mostrar fórmulas, verificar erros). Dados cuida de classificar, filtrar e importar; Revisão, de ortografia e comentários.",
+"Rastrear precedentes fica em Fórmulas > Auditoria de Fórmulas.",
+["ms"],["in10","vinf"]); SRC("IBGP, Pref. Uberaba/MG, 2023");
+
+q("inf",2,"Excel (Microsoft 365)",
+"Um guarda municipal quer usar o comando Classificar no Excel, versão em português. Ele o encontra na guia:",
+["Exibir.","Inserir.","Fórmulas.","Dados."],3,
+"Classificar e Filtrar ficam na guia Dados (há também um atalho em Página Inicial > Edição). Exibir muda a visualização; Inserir coloca tabelas, gráficos e imagens.",
+"Ordenar e filtrar = Dados.",
+["ms"],["in10","vinf"]); SRC("IBGP, Pref. Betim/MG, 2022");
+
+q("inf",2,"Excel (Microsoft 365)",
+"Para o Excel entender o que foi digitado numa célula como fórmula ou função, o conteúdo deve começar com:",
+["aspas (\").","sinal de igual (=).","dois-pontos (:).","porcentagem (%)."],1,
+"Fórmulas começam com = (o Excel também aceita + ou - no início, por compatibilidade). Aspas marcam texto dentro da fórmula e dois-pontos indicam intervalo (A1:A10).",
+"Sem o = na frente, o Excel trata como texto.",
+["ms"],["in10","vinf"]); SRC("IBGP, Pref. Uberaba/MG, 2023");
+
+q("inf",2,"Excel (Microsoft 365)",
+"No Excel, ao digitar =12/3+100*2-20 e teclar Enter, o resultado é:",
+["204.","184.","#VALOR!","36."],1,
+"O Excel segue a precedência da matemática: primeiro divisão e multiplicação (12/3 = 4; 100*2 = 200), depois soma e subtração: 4 + 200 - 20 = 184.",
+"Não calcule da esquerda para a direita sem olhar a precedência.",
+["ms"],["in10","vinf"]); SRC("IBGP, Pref. Santa Luzia/MG, 2018");
+
+q("inf",2,"Excel (Microsoft 365)",
+"A célula A2 da planilha Plan1 tem um número. Para que a célula A5 da Plan2, no mesmo arquivo, mostre esse valor e se atualize quando ele mudar, deve-se digitar em A5:",
+["=COPIAR(Plan1!A2)","=Plan1!A2","=VINCULAR(Plan1!$A$2)","=Plan1>>A2"],1,
+"Referência a outra planilha do mesmo arquivo: nome da planilha, ponto de exclamação e a célula (=Plan1!A2). COPIAR e VINCULAR não são funções do Excel.",
+"Outra planilha = Nome! antes da célula.",
+["ms"],["in10","vinf"]); SRC("FCC, Pref. São José do Rio Preto/SP, 2019");
+
+q("inf",2,"Excel (Microsoft 365)",
+"As horas paradas dos computadores 1 a 10 estão em A1 a A10. A fórmula =MÉDIA(A1:A4;A6;A10) calcula a média dos computadores:",
+["1, 4, 6 e 10.","1, 2, 3, 4, 6 e 10.","1 a 10.","1 a 6 e 10."],1,
+"Dois-pontos indica intervalo (A1:A4 = 1, 2, 3 e 4) e ponto e vírgula separa argumentos (A6 e A10 entram sozinhos). Ficam de fora 5, 7, 8 e 9.",
+"':' = 'até'; ';' = 'e'.",
+["ms"],["in10","vinf"]); SRC("FCC, Auditor Fiscal Manaus/AM, 2019");
+
+q("inf",2,"Excel (Microsoft 365)",
+"No Excel, A1 = 10, A2 = -5, A3 = 20 e A4 = -8. A fórmula =SOMA(A1;A4) em A5 resulta em:",
+["2.","17.","30.","43."],0,
+"Com ponto e vírgula, só entram A1 e A4: 10 + (-8) = 2. Com dois-pontos (=SOMA(A1:A4)) seriam as quatro células: 17.",
+"Olhe o separador antes de somar tudo.",
+["ms"],["in10","vinf"]); SRC("FGV, Pref. São José dos Campos/SP, 2024");
+
+/* Aula 11: Word */
+q("inf",2,"Word (Microsoft 365)",
+"Uma professora selecionou um trecho no Word para pôr em negrito, mas acabou apagando o texto sem querer. Para desfazer a última ação, ela deve teclar:",
+["Ctrl+T.","Ctrl+N.","Ctrl+D.","Ctrl+Z."],3,
+"Ctrl+Z desfaz a última ação (e pode ser repetido); Ctrl+Y refaz. No Word em português, Ctrl+T seleciona tudo, Ctrl+N aplica negrito e Ctrl+D abre a janela Fonte.",
+"No Word em português os atalhos mudam: N = negrito, T = selecionar tudo.",
+["ms"],["in11","vinf"]); SRC("IBGP, Pref. Uberaba/MG, 2023");
+
+q("inf",2,"Word (Microsoft 365)",
+"No Word em português, configuração padrão, julgue: I. O botão Substituir localiza todas as ocorrências de uma palavra e as troca por outra. II. Ctrl+G alinha o parágrafo à direita. III. O Painel de Seleção fica na guia Design. Está correto o que se afirma em:",
+["I e II, apenas.","I e III, apenas.","II e III, apenas.","I, II e III."],0,
+"I está certa (Página Inicial > Edição > Substituir, ou Ctrl+U). II está certa no Word em português: Ctrl+G alinha à direita, Ctrl+E centraliza, Ctrl+J justifica e Ctrl+Q alinha à esquerda (no Word em inglês o Ctrl+G seria 'Ir para'). III está errada: o Painel de Seleção fica em Página Inicial > Selecionar e em Layout > Organizar.",
+"Alinhamentos no Word PT: Q, E, G, J (esquerda, centro, direita, justificado).",
+["ms"],["in11","vinf"]); SRC("IBGP, Pref. Betim/MG, 2022");
+
+q("inf",2,"Word (Microsoft 365)",
+"No Word, para gravar um arquivo que já existe como um NOVO arquivo, com outro nome, usa-se:",
+["Novo.","Abrir.","Salvar como.","Salvar."],2,
+"Salvar como permite escolher outro nome, local ou formato (F12 no Windows), mantendo o original intacto. Salvar (Ctrl+B no Word em português) só grava as alterações no mesmo arquivo.",
+"Salvar sobrescreve; Salvar como cria outra cópia.",
+["ms"],["in11","vinf"]); SRC("Cebraspe, Guarda Civil Municipal Boa Vista/RR, 2023");
+
+q("inf",2,"Word (Microsoft 365)",
+"No Word, o botão Mostrar Tudo (¶), no grupo Parágrafo da guia Página Inicial, faz com que:",
+["todos os parágrafos recebam recuo de 1,25 cm.","as marcas de formatação (parágrafo, espaço, tabulação) apareçam no texto.","os títulos sejam classificados automaticamente como Título 1, Título 2.","se abra uma área para criar equações."],1,
+"Ele exibe os caracteres ocultos: ¶ no fim de cada parágrafo, pontos nos espaços, setas nas tabulações. Ajuda a achar espaços e quebras sobrando. Essas marcas não saem na impressão. Atalho: Ctrl+Shift+8.",
+"As marcas aparecem na tela, mas não são impressas.",
+["ms"],["in11","vinf"]); SRC("FCC, Pref. São José do Rio Preto/SP, 2019");
+
+q("inf",2,"Word (Microsoft 365)",
+"Um técnico digitou um texto longo todo em MAIÚSCULAS. Com o texto selecionado, para deixar maiúscula só a primeira letra de cada frase, ele deve:",
+["redigitar tudo, pois o Word não tem essa opção.","usar o botão Maiúsculas e Minúsculas, na guia Página Inicial.","usar o comando Inverter Letras, na guia Layout.","usar a Correção Automática da guia Revisão."],1,
+"O botão Maiúsculas e Minúsculas (Aa), no grupo Fonte da Página Inicial, tem a opção 'Primeira letra da frase em maiúscula'. Shift+F3 alterna entre os formatos.",
+"Shift+F3 alterna maiúsculas, minúsculas e iniciais maiúsculas.",
+["ms"],["in11","vinf"]); SRC("FCC, Técnico TJ/MA, 2019");
+
+q("inf",2,"Word (Microsoft 365)",
+"No Word, as Quebras de Seção são importantes quando é preciso:",
+["definir espaçamento antes e depois dos parágrafos.","inserir caixas de texto.","mesclar células de uma tabela.","usar cabeçalhos, rodapés ou orientação de página diferentes em partes do documento."],3,
+"Cada seção pode ter margens, orientação (retrato ou paisagem), colunas, numeração e cabeçalho/rodapé próprios. As quebras ficam em Layout > Quebras. Mesclar células fica em Layout da Tabela.",
+"Mudar a configuração de página só em um trecho = quebra de seção.",
+["ms"],["in11","vinf"]); SRC("FGV, Polícia Militar/SP, 2022");
+
+/* Aula 12: PowerPoint */
+q("inf",2,"PowerPoint (Microsoft 365)",
+"Um arquivo com a extensão .pps está associado ao programa:",
+["Adobe Photoshop.","Microsoft Publisher.","Adobe Acrobat.","Microsoft PowerPoint."],3,
+".pps (e o atual .ppsx) é a 'apresentação de slides' do PowerPoint, que abre direto no modo de exibição. O formato de edição comum é .pptx (antigo .ppt).",
+"PPS = abre já apresentando; PPT/PPTX = abre para editar.",
+["ms"],["in12","vinf"]); SRC("IBGP, Pref. Andradas/MG, 2017");
+
+q("inf",2,"PowerPoint (Microsoft 365)",
+"Um técnico ainda não sabe que logotipo e estilo os slides terão. Para mudar isso depois em todos de uma vez, ele deve editar o slide especial em que os outros se baseiam, chamado:",
+["Slide Mestre.","Folha de Estilo.","Folheto Mestre.","Anotações Mestras."],0,
+"O Slide Mestre (Exibir > Slide Mestre) guarda fundo, fontes, cores, logotipo e layouts; o que muda nele vale para todos os slides baseados nele. Folheto Mestre e Anotações Mestras cuidam só das versões impressas.",
+"Mudança em todos os slides de uma vez = Slide Mestre.",
+["ms"],["in12","vinf"]); SRC("FCC, Técnico Fazendário SEFAZ/MA, 2019");
+
+q("inf",2,"PowerPoint (Microsoft 365)",
+"Durante a apresentação de slides, o atalho que ativa o ponteiro laser no PowerPoint é:",
+["Ctrl+Q.","Ctrl+W.","Ctrl+O.","Ctrl+L."],3,
+"No modo de apresentação, Ctrl+L liga o ponteiro laser e Ctrl+P a caneta para desenhar sobre o slide. Esc encerra a apresentação.",
+"L de laser; P de pen (caneta).",
+["ms"],["in12","vinf"]); SRC("Vunesp, Pref. Guarulhos/SP, 2023");
+
+q("inf",2,"PowerPoint (Microsoft 365)",
+"O texto digitado no painel de Anotações de um slide, ao iniciar a apresentação com F5:",
+["aparece por cima do conteúdo do slide.","aparece antes do conteúdo do slide.","não é exibido para o público.","só aparece se o apresentador apertar Enter."],2,
+"As anotações são lembretes de quem apresenta. O público não as vê; elas aparecem no Modo de Exibição do Apresentador e podem ser impressas.",
+"Anotação é cola do apresentador, não conteúdo do slide.",
+["ms"],["in12","vinf"]); SRC("Vunesp, Pref. São Bernardo do Campo/SP, 2023");
+
+q("inf",2,"PowerPoint (Microsoft 365)",
+"Com dois monitores, o recurso do PowerPoint em que o público vê só o slide enquanto quem apresenta vê também anotações, o próximo slide e o tempo decorrido é o:",
+["Modo de Exibição do Apresentador.","Modo de Exibição Anotações.","Recurso de Divisão de Janelas.","Modo de Classificação de Slides."],0,
+"O Modo de Exibição do Apresentador mostra ao orador o slide atual, o próximo, as anotações e um cronômetro, enquanto o projetor exibe só o slide em tela cheia. Alt+F5 abre esse modo.",
+"Público vê o slide; o apresentador vê o 'painel de controle'.",
+["ms"],["in12","vinf"]); SRC("Vunesp, Pref. Mogi das Cruzes/SP, 2018");
+
+q("inf",2,"PowerPoint (Microsoft 365)",
+"No PowerPoint, o atalho de teclado que insere um novo slide é:",
+["Ctrl+M.","Ctrl+N.","Ctrl+P.","Ctrl+J."],0,
+"Ctrl+M insere um novo slide depois do atual. Ctrl+N cria uma nova apresentação em branco e Ctrl+P abre a impressão.",
+"M de mais um slide; N de novo arquivo.",
+["ms"],["in12","vinf"]); SRC("Vunesp, Pref. Buritizal/SP, 2018");
