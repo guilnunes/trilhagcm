@@ -1,5 +1,13 @@
 // Novidades: a entrada mais recente fica no topo. Cada nova adição ao app ganha um id novo (maior que o anterior).
 const NEWS = [
+  { id: 8, data: "23/11/2026", titulo: "+24 questões de Informática",
+    itens: [
+      "Nuvem: SaaS, PaaS, IaaS e armazenamento on-line",
+      "Outlook e e-mail: Cc, Cco, encaminhar e regras",
+      "Segurança: criptografia, integridade, confidencialidade e 2FA",
+      "Malware e golpes: trojan, ransomware, DDoS e antecipação de recursos"
+    ],
+    total: 790 },
   { id: 7, data: "23/11/2026", titulo: "+33 questões de Informática",
     itens: [
       "Internet e redes: LAN, MAN, WAN, switch, protocolos e endereço IP",

@@ -241,3 +241,175 @@ q("inf",3,"Pesquisa na internet",
 "allintitle: exige que todas as palavras estejam no título da página (intitle: vale para uma palavra só). O + e o ~ já foram operadores do Google, mas foram desativados; 'in caption' nunca existiu.",
 "site: limita o site, filetype: o tipo de arquivo, intitle:/allintitle: o título.",
 [],["in4","vinf"]); SRC("Cebraspe, SEFAZ/AC, 2023");
+
+/* Aula 05: Segurança em nuvem */
+q("inf",4,"Nuvem",
+"Um professor quer colocar um arquivo na nuvem para compartilhar com os alunos. Qual destas opções NÃO é um serviço de armazenamento de arquivos na nuvem?",
+["SharePoint.","Google Drive.","OneDrive.","Google Chrome."],3,
+"Google Drive, OneDrive e SharePoint guardam e compartilham arquivos em servidores remotos. O Google Chrome é só o navegador, usado para acessar esses serviços, mas não armazena arquivos.",
+"Navegador acessa a nuvem; não é a nuvem.",
+[],["in5","vinf"]); SRC("IBGP, Pref. Uberaba/MG, 2023");
+
+q("inf",4,"Nuvem",
+"Um usuário quer fazer backup dos arquivos num serviço de nuvem, para acessá-los de qualquer computador ou celular ligado à internet. Atende a essa necessidade o:",
+["Gmail.","Google Chrome.","Facebook.","Microsoft OneDrive."],3,
+"O OneDrive é o armazenamento em nuvem da Microsoft, que sincroniza arquivos entre dispositivos. Gmail é e-mail, Chrome é navegador e Facebook é rede social.",
+"Anexar arquivo num e-mail não é serviço de backup.",
+[],["in5","vinf"]); SRC("IBGP, CISSUL/MG, 2017");
+
+q("inf",4,"Nuvem",
+"Um analista usa editores de texto e planilha (como o Google Docs) que não estão instalados no computador, mas em servidores na internet, e guarda lá os documentos. Esse modelo de nuvem é o:",
+["Software como Serviço (SaaS).","Plataforma como Serviço (PaaS).","Infraestrutura como Serviço (IaaS).","Desenvolvimento como Serviço."],0,
+"Quando o usuário usa o programa pronto pela internet, é SaaS (Google Docs, Microsoft 365 na Web, Gmail). PaaS oferece ambiente para programadores criarem aplicações; IaaS oferece servidores, armazenamento e rede.",
+"SaaS = programa pronto; PaaS = ambiente para desenvolver; IaaS = máquinas.",
+[],["in5","vinf"]); SRC("FCC, Analista TRT 6ª Região/PE, 2018");
+
+q("inf",4,"Nuvem",
+"O modelo de nuvem IaaS (Infraestrutura como Serviço) oferece, entre outros, o serviço de:",
+["armazenamento de backup.","gerenciamento de banco de dados.","provedor de e-mail.","edição de documentos."],0,
+"IaaS entrega recursos básicos de máquina: processamento, rede e armazenamento (por exemplo, espaço para backup). Banco de dados gerenciado é típico de PaaS; e-mail e editores prontos são SaaS.",
+"Quanto mais 'cru' o recurso (disco, servidor), mais perto do IaaS.",
+[],["in5","vinf"]); SRC("FCC, Analista CLDF, 2018");
+
+q("inf",4,"Nuvem",
+"O serviço de nuvem que oferece um ambiente para criar, implantar e testar aplicações feitas para a nuvem é chamado de:",
+["SaaS.","PaaS.","IaaS.","DaaS."],1,
+"PaaS (Plataforma como Serviço) dá ao desenvolvedor o ambiente pronto (sistema, banco de dados, ferramentas) para programar e testar, sem cuidar dos servidores.",
+"Plataforma = para quem desenvolve.",
+[],["in5","vinf"]); SRC("FCC, CNMP, 2015");
+
+q("inf",4,"Nuvem",
+"É uma DESVANTAGEM do armazenamento em nuvem:",
+["pagar só pelo espaço que realmente usar.","não precisar instalar discos e servidores próprios.","o desempenho poder ser menor que o local, exigindo bom investimento em internet.","transferir para o provedor tarefas como backup e replicação."],2,
+"Tudo passa pela internet: com conexão lenta ou fora do ar, o acesso fica lento ou impossível. As demais opções são vantagens da nuvem.",
+"Sem internet, sem nuvem.",
+[],["in5","vinf"]); SRC("FCC, TRE/AP, 2015");
+
+/* Aula 06: Outlook */
+q("inf",2,"Outlook e e-mail",
+"São dois exemplos de programas clientes de correio eletrônico, usados para ler, escrever e organizar e-mails no computador:",
+["Gmail e Microsoft Exchange.","Microsoft Outlook e Impress.","Microsoft Outlook e Mozilla Thunderbird.","Writer e Impress."],2,
+"Outlook e Thunderbird são programas clientes de e-mail. O Gmail é um serviço de webmail, o Exchange é o servidor de e-mails da Microsoft, e Writer e Impress são o editor de texto e o de apresentações do LibreOffice.",
+"Servidor (Exchange) guarda as mensagens; cliente (Outlook) é o programa do usuário.",
+[],["in6","vinf"]); SRC("IBGP, Pref. Betim/MG, 2022");
+
+q("inf",2,"Outlook e e-mail",
+"Qual destes é um endereço de correio eletrônico escrito corretamente?",
+["contato.saojoaodelrei.mg.gov.br","contato#saojoaodelrei.mg.gov.br","contato@saojoaodelrei.mg.gov.br","www.saojoaodelrei.mg.gov.br"],2,
+"Todo e-mail tem o formato usuário@domínio, sem espaços. O www indica endereço de site, e # ou ponto no lugar do @ não formam e-mail. Na prova original a opção marcada como certa tinha um espaço depois do @, o que a tornaria inválida; aqui o endereço foi escrito do jeito correto.",
+"Sem @ não é e-mail; com espaço também não.",
+[],["in6","vinf"]); SRC("IBGP, Pref. São João del-Rei/MG, 2021");
+
+q("inf",2,"Outlook e e-mail",
+"Complete: o protocolo ______ foi criado para RECUPERAR (baixar) as mensagens de e-mail guardadas no servidor.",
+["HTTP","POP","SMTP","TCP"],1,
+"O POP (POP3) baixa as mensagens do servidor para o computador; o IMAP também recebe, mas mantém tudo sincronizado no servidor. O SMTP é o de envio e o HTTP o de páginas da Web.",
+"Recuperar/receber = POP ou IMAP; enviar = SMTP.",
+[],["in6","vinf"]); SRC("IBGP, Pref. Dores do Indaiá/MG, 2021");
+
+q("inf",2,"Outlook e e-mail",
+"Aline mandou um e-mail com Para: Beto; Cc: Carlos; Cco: Deise. Beto clicou em 'Responder a todos'. Quem recebe a resposta de Beto?",
+["Aline e Carlos, apenas.","Carlos e Deise, apenas.","Aline, Carlos e Deise.","Somente Aline."],0,
+"'Responder a todos' manda para o remetente (Aline) e para quem estava em Para e Cc (Carlos). Quem estava em Cco (Deise) ficou oculto, então ninguém sabe dela e ela não entra na resposta.",
+"Cópia oculta fica fora do 'responder a todos'.",
+[],["in6","vinf"]); SRC("Vunesp, Câmara de Marília/SP, 2023");
+
+q("inf",2,"Outlook e e-mail",
+"Tiago recebeu um e-mail com um arquivo anexo. A opção que, por padrão, já leva o anexo para a nova mensagem é:",
+["Arquivar.","Responder a todos.","Responder.","Encaminhar."],3,
+"Encaminhar repassa a mensagem a outra pessoa com os anexos. Responder e Responder a todos, por padrão, não reenviam o anexo, já que ele veio de quem vai receber a resposta.",
+"Quer repassar o arquivo? Encaminhe.",
+[],["in6","vinf"]); SRC("Vunesp, Pref. Piracicaba/SP, 2023");
+
+q("inf",2,"Outlook e e-mail",
+"Um agente quer que as mensagens de certo remetente sejam excluídas automaticamente no Microsoft Outlook. Isso é feito:",
+["de forma nenhuma, pois o Outlook não tem regras de exclusão.","instalando um complemento chamado MSRules.","criando uma regra (Página Inicial > Regras > Criar Regra).","só com filtro antispam, que o Outlook não tem."],2,
+"As Regras do Outlook aplicam ações automáticas (mover, excluir, sinalizar) a mensagens que atendem a condições, como o remetente. O Outlook também tem filtro de lixo eletrônico e a opção de bloquear remetente.",
+"Automatizar no Outlook = Regras.",
+["ms"],["in6","vinf"]); SRC("FCC, Oficial de Trânsito DETRAN/SP, 2019");
+
+/* Aula 07: Segurança da informação */
+q("inf",3,"Segurança da informação",
+"Relacione o mecanismo à característica: 1. Criptografia; 2. Backup; 3. Antimalware. ( ) codifica a informação; ( ) previne contra códigos maliciosos; ( ) faz cópia de segurança dos arquivos. A sequência correta é:",
+["1, 3, 2.","2, 1, 3.","2, 3, 1.","3, 1, 2."],0,
+"Criptografia embaralha (codifica) os dados para que só quem tem a chave os leia; antimalware (antivírus) detecta e bloqueia códigos maliciosos; backup é a cópia de segurança para recuperar arquivos perdidos.",
+"Backup não impede ataque: só permite recuperar depois.",
+[],["in7","vinf"]); SRC("IBGP, Pref. São João del-Rei/MG, 2021");
+
+q("inf",3,"Segurança da informação",
+"Sobre criptografia, julgue: I. É um dos principais mecanismos para proteger dados dos riscos do uso da internet. II. Protege comunicações como as transações bancárias on-line. III. Conforme a chave usada, divide-se em simétrica e assimétrica. Está correto o que se afirma em:",
+["I e II, apenas.","I e III, apenas.","II e III, apenas.","I, II e III."],3,
+"As três estão certas. Na criptografia simétrica a mesma chave cifra e decifra; na assimétrica há um par de chaves, pública e privada. É ela que protege o HTTPS dos bancos e lojas.",
+"Simétrica = 1 chave; assimétrica = par de chaves (pública e privada).",
+[],["in7","vinf"]); SRC("IBGP, Pref. São João del-Rei/MG, 2021");
+
+q("inf",3,"Segurança da informação",
+"Sobre segurança da informação, assinale a opção correta.",
+["Só receber um link com malware já contamina o aparelho, mesmo sem clicar.","Instalar e configurar programas de segurança basta para proteger os dados do computador.","Recomenda-se não abrir anexos de e-mails enviados por desconhecidos.","O firewall só melhora o desempenho do computador, sem ajudar na segurança."],2,
+"Anexos de desconhecidos são porta clássica de malware. O link só contamina se for clicado e executar algo; programas de segurança ajudam, mas não bastam sem atualização e cuidado do usuário; o firewall filtra o tráfego de rede, ou seja, é ferramenta de segurança.",
+"Nenhuma ferramenta 'basta' sozinha: o usuário é parte da segurança.",
+[],["in7","vinf"]); SRC("Cebraspe, Pref. São Cristóvão/SE, 2023");
+
+q("inf",3,"Segurança da informação",
+"Na assinatura digital, a propriedade que detecta qualquer alteração no documento, fazendo a assinatura deixar de ser reconhecida, é a:",
+["autenticidade.","integridade.","não repúdio.","disponibilidade."],1,
+"Integridade = o conteúdo não foi alterado. Autenticidade = confirma quem é o autor. Não repúdio = o autor não pode negar que assinou. Disponibilidade = a informação está acessível quando precisa.",
+"Alterou o conteúdo? Quebrou a integridade.",
+[],["in7","vinf"]); SRC("FCC, Pref. Manaus/AM, 2019");
+
+q("inf",3,"Segurança da informação",
+"Numa VPN, a CONFIDENCIALIDADE dos dados garante que:",
+["a mensagem não foi alterada no caminho.","a mensagem veio de uma fonte autêntica.","o emissor não poderá negar que enviou a mensagem.","a mensagem não poderá ser lida por quem não está autorizado."],3,
+"Confidencialidade = sigilo: só quem tem autorização entende o conteúdo (por isso a VPN cifra o tráfego). Não alterar é integridade; origem confirmada é autenticidade; não poder negar o envio é não repúdio.",
+"Confidencial = secreto; íntegro = sem alteração.",
+[],["in7","vinf"]); SRC("Cebraspe, TRT 8ª Região, 2022");
+
+q("inf",3,"Segurança da informação",
+"A autenticação que exige dois ou mais fatores (por exemplo, senha e código no celular) para identificar o usuário tem como objetivo:",
+["dificultar o acesso ao sistema para todos.","forçar o uso de senhas mais fortes.","impedir que o usuário compartilhe a senha.","reduzir o estrago caso um dos fatores seja descoberto ou roubado."],3,
+"Se a senha vazar, o invasor ainda precisa do segundo fator (celular, token, biometria). Assim, a falha de um único fator não basta para entrar na conta.",
+"2FA não deixa a senha mais forte: cria uma segunda barreira.",
+[],["in7","vinf"]); SRC("Vunesp, Câmara de Piracicaba/SP, 2019");
+
+/* Aula 08: Vírus, malwares e golpes digitais */
+q("inf",3,"Malware e golpes",
+"Navegando na internet, um aluno abriu um cartão virtual animado que pedia para executar um programa. Ao fazer isso, o computador foi infectado sem que ele notasse. O malware que cumpre a função aparente, mas executa às escondidas outras ações maliciosas, é o:",
+["trojan (cavalo de Troia).","backdoor.","worm.","ransomware."],0,
+"O cavalo de Troia chega disfarçado de algo útil ou divertido (cartão, jogo, programa grátis) e, ao ser executado pelo próprio usuário, instala as funções maliciosas. O worm se espalha sozinho; o backdoor é a porta de retorno que o invasor deixa aberta.",
+"Presente que o usuário mesmo abre = cavalo de Troia.",
+[],["in8","vinf"]); SRC("IBGP, Pref. Uberaba/MG, 2023");
+
+q("inf",3,"Malware e golpes",
+"Qual destes termos NÃO é um tipo de malware?",
+["Backdoor.","Bot.","Firewall.","Keylogger."],2,
+"O firewall é uma ferramenta de proteção que filtra o tráfego de rede. Backdoor (porta dos fundos para o invasor voltar), bot (computador controlado remotamente) e keylogger (grava o que se digita) são malwares.",
+"Firewall protege; não ataca.",
+[],["in8","vinf"]); SRC("IBGP, Pref. Betim/MG, 2022");
+
+q("inf",3,"Malware e golpes",
+"Julgue (V ou F): ( ) Worm se espalha sozinho pelas redes, mandando cópias de si mesmo de um computador a outro. ( ) Abrir anexo de e-mail infectado é uma das formas de contaminação. ( ) Malware é programa feito para executar ações danosas. ( ) Spyware é o programa que garante ao invasor o retorno a um computador já comprometido. A sequência correta é:",
+["V, V, V, F.","F, V, V, V.","V, F, F, F.","V, F, V, F."],0,
+"As três primeiras estão certas. A última descreve o backdoor; spyware é o programa que espiona e envia dados do usuário. Na prova original nenhuma alternativa trazia V, V, V, F e a banca marcou F, V, V, V; aqui as opções foram ajustadas para a sequência tecnicamente correta.",
+"Spyware espiona; backdoor deixa a porta aberta para o invasor voltar.",
+[],["in8","vinf"]); SRC("IBGP, Pref. São João del-Rei/MG, 2021");
+
+q("inf",3,"Malware e golpes",
+"No golpe chamado ______, o golpista tenta convencer a pessoa a entregar dados confidenciais ou pagar algo, prometendo um benefício futuro (prêmio, herança, empréstimo facilitado).",
+["fraude de antecipação de recursos","furto de identidade","boato (hoax)","pharming"],0,
+"Na fraude de antecipação de recursos a vítima adianta dados ou dinheiro esperando um ganho que nunca vem. Furto de identidade é usar os dados de outra pessoa; boato é notícia falsa; pharming desvia o usuário para um site falso mesmo digitando o endereço certo.",
+"Promessa de ganho em troca de algo adiantado = antecipação de recursos.",
+[],["in8","vinf"]); SRC("IBGP, Pref. São João del-Rei/MG, 2021");
+
+q("inf",3,"Malware e golpes",
+"O ransomware torna os dados inacessíveis e cobra resgate para liberá-los. Os dois tipos principais são:",
+["Locker e Crypto.","Other e Crypto.","Locker e Logger.","Other e Logger."],0,
+"O Locker bloqueia o acesso ao aparelho inteiro; o Crypto criptografa os arquivos. A melhor defesa é ter backup atualizado e guardado fora do alcance do computador.",
+"Logger vem de keylogger, que grava teclas; não é ransomware.",
+[],["in8","vinf"]); SRC("IBGP, Pref. Andrelândia/MG, 2019");
+
+q("inf",3,"Malware e golpes",
+"Sobre os ataques DoS e DDoS, é correto afirmar que:",
+["enviam muitos e-mails com links falsos para downloads maliciosos.","interceptam conexões em redes públicas para capturar senhas.","tentam sobrecarregar servidores para impedir o funcionamento normal dos serviços.","testam senhas por tentativa e erro até invadir contas."],2,
+"DoS é negação de serviço: inundar o alvo de requisições até ele cair ou ficar lento. No DDoS o ataque parte de muitas máquinas ao mesmo tempo, normalmente uma botnet. E-mails falsos são phishing; tentativa e erro de senha é força bruta.",
+"DDoS não rouba dados: derruba o serviço.",
+[],["in8","vinf"]); SRC("FGV, Policial Legislativo Senado Federal, 2022");
