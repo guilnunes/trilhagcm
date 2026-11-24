@@ -1,5 +1,12 @@
 // Novidades: a entrada mais recente fica no topo. Cada nova adição ao app ganha um id novo (maior que o anterior).
 const NEWS = [
+  { id: 13, data: "24/11/2026", titulo: "Links diretos para as aulas do Vale",
+    itens: [
+      "Cada questão agora abre a videoaula exata do Vale Concursos",
+      "213 aulas mapeadas, de Português a Leis Municipais",
+      "Atualidades, Backup, Nuvem, IA e Teams seguem com o link do módulo (o Vale não tem aula específica)"
+    ],
+    total: 900 },
   { id: 12, data: "23/11/2026", titulo: "+23 questões de Conhecimentos Gerais",
     itens: [
       "Saúde e segurança pública: dengue, febre amarela, Não é Não",

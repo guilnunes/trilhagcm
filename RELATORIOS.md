@@ -11,6 +11,29 @@ Regras deste arquivo:
 
 ---
 
+## 24/11/2026 (Chat, conta do Fred): mapa das aulas do Vale Concursos
+
+Notion: pendente
+
+Total: 900 questões (esp 166, leg 208, por 165, rl 121, inf 155, cg 85), sem questões novas nesta parte.
+
+Linha de registro: 24/11/2026 (Chat, conta do Fred): mapa das 213 aulas do Vale; 765 questões com link para a aula exata; total 900
+
+O que foi feito:
+- Novo arquivo questoes/98-vale-aulas.js com as 213 aulas de conteúdo do curso GCM São João del-Rei no Hotmart (15 módulos), cada uma como chave E.va_<id>, e as regras VALE_REGRAS que ligam tópico e enunciado à aula.
+- questoes/99-links-vale.js passou a usar essas regras: a questão aponta para a aula exata, no lugar do link do módulo ou da lei. Links de simulado e da lista de 60 questões de Desarmamento continuam.
+- Resultado: 765 questões com link para a aula exata; 135 continuam com o link do módulo porque o Vale não tem aula específica do tema (Atualidades, Cidadania, Cultura, Meio ambiente, Backup, Nuvem, IA, Teams, Hardware, Redes sociais, Semântica, Sintaxe, Figuras de linguagem, Formação de palavras).
+- 114 das 213 aulas já têm questões ligadas. As outras 99 (por exemplo, a maior parte dos crimes em espécie do Código Penal, partes 2 em diante de ECA, Improbidade e Idoso, CF arts. 38 a 43, abas do Word, do PowerPoint e do Excel, Matemática) ficam como pauta para questões novas.
+- Novidade id 13 (sem mudança no total).
+
+Observações:
+- Os PDFs do Vale têm DRM do Hotmart (não copiáveis, com marca d'água do assinante). Por isso não foram extraídos; só os títulos e os endereços das aulas entraram no app.
+- As videoaulas não foram assistidas (a sessão não tem acesso a vídeo). Questões novas para as aulas sem cobertura são escritas a partir do tema da aula e da lei oficial.
+
+Problemas de configuração: nenhum.
+
+---
+
 ## 23/11/2026 (Chat, conta do Fred): lote 16, Conhecimentos Gerais e Atualidades
 
 Notion: pendente
