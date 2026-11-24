@@ -13,7 +13,7 @@ Regras deste arquivo:
 
 ## 24/11/2026 (Chat, conta do Fred): mapa das aulas do Vale Concursos
 
-Notion: pendente
+Notion: lançado em 24/11/2026
 
 Total: 900 questões (esp 166, leg 208, por 165, rl 121, inf 155, cg 85), sem questões novas nesta parte.
 
@@ -36,7 +36,7 @@ Problemas de configuração: nenhum.
 
 ## 23/11/2026 (Chat, conta do Fred): lote 16, Conhecimentos Gerais e Atualidades
 
-Notion: pendente
+Notion: lançado em 24/11/2026
 
 Total: 900 questões (esp 166, leg 208, por 165, rl 121, inf 155, cg 85)
 
@@ -71,7 +71,7 @@ Problemas de configuração: nenhum (push, PR pela API REST e auto-merge funcion
 
 ## 23/11/2026 (Chat, conta do Fred): lote 15, Noções de Informática
 
-Notion: pendente
+Notion: lançado em 24/11/2026
 
 Total ao fim do lote: 847 questões (esp 166, leg 208, por 165, rl 121, inf 155, cg 32)
 
@@ -114,7 +114,7 @@ Problemas de configuração:
 
 ## 22/11/2026 (Chat, conta do Fred): lote 14, Raciocínio Lógico aula 13 (teste)
 
-Notion: pendente
+Notion: lançado em 22/11/2026
 
 Total ao fim do lote: 733 questões (esp 166, leg 208, por 165, rl 121, inf 41, cg 32)
 
