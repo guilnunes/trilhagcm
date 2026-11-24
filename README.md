@@ -26,6 +26,7 @@ O login é só para separar o progresso de cada pessoa no aparelho. Não é segu
 | questoes/04-estrategia-penal.js | Lote 4: questões reais de Penal e Processo Penal (via Estratégia) |
 | questoes/99-links-vale.js | Liga cada questão à aula do Vale Concursos (sempre por último) |
 | novidades.js | Avisos de conteúdo novo, mostrados uma vez ao abrir o app |
+| RELATORIOS.md | Relatório de cada sessão de publicação, para atualizar a página de status no Notion |
 | tools/build.py | Inclui os lotes de questoes/ no index.html e no sw.js e atualiza a versão do cache |
 | tools/extract.js | Script para colar no console de um PDF do Estratégia: extrai, divide e seleciona as questões |
 | tools/validate.js | Confere todas as regras do banco (roda no CI) |
@@ -64,3 +65,4 @@ q(materia, fase, "Tópico", "Enunciado", ["A", "B", "C", "D"], indiceCorreto,
 2. `python3 tools/build.py`, `node tools/validate.js` e `python3 tools/test.py` precisam passar
 3. Abrir pull request para `main`; o CI repete as duas verificações
 4. Com o CI verde, fazer merge (squash). O GitHub Pages publica sozinho
+5. Acrescentar o relatório da sessão no topo de `RELATORIOS.md`, no mesmo pull request do lote (ou no último, se o lote foi publicado em partes), com "Notion: pendente"
