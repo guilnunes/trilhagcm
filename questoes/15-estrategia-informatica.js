@@ -154,7 +154,7 @@ q("inf",3,"Navegadores",
 "No Google Chrome, o atalho que abre uma NOVA JANELA do navegador é:",
 ["Alt+A.","Ctrl+T.","Alt+N.","Ctrl+N."],3,
 "Ctrl+N abre uma nova janela; Ctrl+T abre uma nova guia (aba) na mesma janela; Ctrl+Shift+N abre janela anônima. A banca deu Ctrl+T na prova original, que pedia 'aba em nova janela', mas no Chrome quem abre janela é o Ctrl+N.",
-"T de 'tab' (guia); N de 'new window' (janela).",
+"T de 'tab' (guia); N de 'new window' (janela). Atenção: nesta prova a IBGP já deu Ctrl+T como resposta. Se a pergunta vier igual, lembre que a banca pode repetir o próprio gabarito.",
 [],["in3","vinf"]); SRC("IBGP, Pref. Itabira/MG, 2021");
 
 q("inf",3,"Navegadores",
@@ -204,7 +204,7 @@ q("inf",3,"Pesquisa na internet",
 "No Google, um usuário quer resultados sobre FUTEBOL, mas sem nenhuma página que contenha a palavra AMERICANO. Ele deve digitar:",
 ["futebol -americano","futebol: excluir americano","defina: futebol sem americano","pesquisa: futebol excluir \"americano\""],0,
 "O sinal de menos colado à palavra (-americano) exclui da busca as páginas que a contêm. 'Excluir', 'sem' e 'pesquisa:' não são comandos do Google; 'defina:' só mostra definições. O gabarito divulgado para a questão original apontava outra opção, mas o comando que funciona no Google é o sinal de menos.",
-"O menos vai COLADO na palavra: 'futebol - americano' (com espaço) não exclui nada.",
+"O menos vai COLADO na palavra: 'futebol - americano' (com espaço) não exclui nada. Atenção: nesta prova a IBGP já deu 'pesquisa: futebol excluir' como resposta, que não é comando do Google.",
 [],["in4","vinf"]); SRC("IBGP, Pref. São João del-Rei/MG, 2021");
 
 q("inf",3,"Pesquisa na internet",
@@ -297,7 +297,7 @@ q("inf",2,"Outlook e e-mail",
 "Qual destes é um endereço de correio eletrônico escrito corretamente?",
 ["contato.saojoaodelrei.mg.gov.br","contato#saojoaodelrei.mg.gov.br","contato@saojoaodelrei.mg.gov.br","www.saojoaodelrei.mg.gov.br"],2,
 "Todo e-mail tem o formato usuário@domínio, sem espaços. O www indica endereço de site, e # ou ponto no lugar do @ não formam e-mail. Na prova original a opção marcada como certa tinha um espaço depois do @, o que a tornaria inválida; aqui o endereço foi escrito do jeito correto.",
-"Sem @ não é e-mail; com espaço também não.",
+"Sem @ não é e-mail; com espaço também não. Atenção: nesta prova a IBGP já deu como resposta uma opção com espaço depois do @; se aparecer de novo, ela é a mais próxima do formato usuário@domínio.",
 [],["in6","vinf"]); SRC("IBGP, Pref. São João del-Rei/MG, 2021");
 
 q("inf",2,"Outlook e e-mail",
@@ -390,7 +390,7 @@ q("inf",3,"Malware e golpes",
 "Julgue (V ou F): ( ) Worm se espalha sozinho pelas redes, mandando cópias de si mesmo de um computador a outro. ( ) Abrir anexo de e-mail infectado é uma das formas de contaminação. ( ) Malware é programa feito para executar ações danosas. ( ) Spyware é o programa que garante ao invasor o retorno a um computador já comprometido. A sequência correta é:",
 ["V, V, V, F.","F, V, V, V.","V, F, F, F.","V, F, V, F."],0,
 "As três primeiras estão certas. A última descreve o backdoor; spyware é o programa que espiona e envia dados do usuário. Na prova original nenhuma alternativa trazia V, V, V, F e a banca marcou F, V, V, V; aqui as opções foram ajustadas para a sequência tecnicamente correta.",
-"Spyware espiona; backdoor deixa a porta aberta para o invasor voltar.",
+"Spyware espiona; backdoor deixa a porta aberta para o invasor voltar. Atenção: nesta prova a IBGP já deu F, V, V, V como resposta.",
 [],["in8","vinf"]); SRC("IBGP, Pref. São João del-Rei/MG, 2021");
 
 q("inf",3,"Malware e golpes",
@@ -526,7 +526,7 @@ q("inf",2,"Word (Microsoft 365)",
 "No Word em português, configuração padrão, julgue: I. O botão Substituir localiza todas as ocorrências de uma palavra e as troca por outra. II. Ctrl+G alinha o parágrafo à direita. III. O Painel de Seleção fica na guia Design. Está correto o que se afirma em:",
 ["I e II, apenas.","I e III, apenas.","II e III, apenas.","I, II e III."],0,
 "I está certa (Página Inicial > Edição > Substituir, ou Ctrl+U). II está certa no Word em português: Ctrl+G alinha à direita, Ctrl+E centraliza, Ctrl+J justifica e Ctrl+Q alinha à esquerda (no Word em inglês o Ctrl+G seria 'Ir para'). III está errada: o Painel de Seleção fica em Página Inicial > Selecionar e em Layout > Organizar.",
-"Alinhamentos no Word PT: Q, E, G, J (esquerda, centro, direita, justificado).",
+"Alinhamentos no Word PT: Q, E, G, J (esquerda, centro, direita, justificado). Atenção: nesta prova a IBGP já tratou Ctrl+G como 'Ir para' (atalho do Word em inglês) e não deu a II como certa.",
 ["ms"],["in11","vinf"]); SRC("IBGP, Pref. Betim/MG, 2022");
 
 q("inf",2,"Word (Microsoft 365)",
