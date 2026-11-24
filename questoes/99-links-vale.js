@@ -1,4 +1,6 @@
-// Liga cada questão também à aula correspondente do Vale Concursos, quando ainda não houver.
+// Liga cada questão à aula do Vale Concursos.
+// 1. Se uma regra de VALE_REGRAS (98-vale-aulas.js) casar, a questão aponta para a aula exata, no lugar dos links genéricos (módulo ou lei); os links de simulado e de listas de questões ficam.
+// 2. Senão, se ainda não houver link do Vale, usa o link da lei ou do módulo (VALE_MAP e SUBJ_VALE).
 const VALE_MAP = [
   [/13\.022|Guardas/, "v13022"], [/Desarm/, "vdesarm"], [/Drogas/, "vdrogas"], [/Abuso/, "vabuso"],
   [/Tortura/, "vtort"], [/ECA/, "veca"], [/Idosa/, "vidoso"], [/Trânsito|CTB/, "vctb"],
@@ -8,11 +10,21 @@ const VALE_MAP = [
   [/Código Penal|Crimes contra|força/, "vpen"], [/CPP/, "vcpp"], [/Direitos Humanos|Internacional/, "vdh"]
 ];
 const SUBJ_VALE = { por: "vport", rl: "vrl", inf: "vinf", cg: "vcg" };
+const isVale = (c) => c && /vale-concursos/.test(c[1]);
+const isValeTrocavel = (c) => isVale(c) && !/Simulado|questões/i.test(c[0]);
 QS.forEach(x => {
-  if (x.ec.some(c => c && /vale-concursos/.test(c[1]))) return;
+  x.ec = x.ec.filter(Boolean);
+  const hay = x.s + "|" + x.t + "|" + x.text;
+  const regra = VALE_REGRAS.find(([re]) => re.test(hay));
+  const aula = regra && E["va_" + regra[1]];
+  if (aula) {
+    x.ec = x.ec.filter(c => !isValeTrocavel(c));
+    if (!x.ec.some(c => isVale(c) && c[1] === aula[1])) x.ec.push(aula);
+    return;
+  }
+  if (x.ec.some(isVale)) return;
   let k = null;
   for (const [re, key] of VALE_MAP) if (re.test(x.t)) { k = key; break; }
   if (!k) k = SUBJ_VALE[x.s];
   if (k && E[k]) x.ec.push(E[k]);
-  x.ec = x.ec.filter(Boolean);
 });
