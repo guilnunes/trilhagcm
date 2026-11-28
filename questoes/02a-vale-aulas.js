@@ -1,7 +1,7 @@
 // ===== Mapa das aulas do Vale Concursos (curso GCM São João del-Rei, Hotmart) =====
 // VALE_AULAS lista as aulas de conteúdo (id da aula no Hotmart e título). Cada uma vira a chave E.va_<id>.
 // VALE_REGRAS liga cada questão à aula exata: a regra é testada em "matéria|tópico|enunciado" e a primeira que casar vale.
-// O arquivo 99-links-vale.js usa estas regras; se nenhuma casar, a questão fica com o link do módulo.
+// Fica logo depois do lote 02 (que define VC) para que os lotes seguintes já possam usar as chaves va_. O arquivo 99-links-vale.js usa as regras; se nenhuma casar, a questão fica com o link do módulo.
 const VALE_AULAS = [
   /* Leis Federais */
   ["a4RKJRZRen", "Lei 7.716 - Lei de Racismo"],
