@@ -11,6 +11,27 @@ Regras deste arquivo:
 
 ---
 
+## 28/11/2026 (Chat, conta do Fred): lote 17, Código Penal (aulas do Vale sem questões)
+
+Notion: pendente
+
+Total: 927 questões (esp 166, leg 235, por 165, rl 121, inf 155, cg 85)
+
+Linha de registro: 28/11/2026 (Chat, conta do Fred): +27 questões de Código Penal (crimes em espécie, aulas do Vale); total 927
+
+O que foi feito:
+- Novo arquivo questoes/17-vale-penal.js: 27 questões escritas para o app, cada uma ligada a uma aula do Vale que não tinha questão: homicídio (3), feminicídio, vicaricídio, participação no suicídio, infanticídio, aborto (2), lesões corporais (2), periclitação e rixa (2), honra (2), liberdade pessoal, domicílio, correspondência, furto, roubo e extorsão (2), usurpação, dano, apropriação indébita, estelionato, receptação e disposições gerais.
+- Base: texto compilado do Código Penal no Planalto, conferido em 28/11/2026. Penas recentes usadas: furto simples de 1 a 6 anos; roubo de 6 a 10; latrocínio de 24 a 30; feminicídio (art. 121-A) e vicaricídio (art. 121-B, Lei 15.384/2026) de 20 a 40.
+- O mapa das aulas mudou de 98-vale-aulas.js para 02a-vale-aulas.js, para que os lotes possam usar as chaves va_ diretamente; 99-links-vale.js respeita a aula já escolhida na questão.
+- Questão antiga atualizada: em 05-estrategia-penal-2.js, a questão de fiança na lesão doméstica (FGV, Oficial PM-RJ, 2024) dizia "pena de 1 a 4 anos"; o enunciado passou a citar só "art. 129, §9º, pena de reclusão", e a resposta não muda.
+- Novidade id 14.
+
+Onde parou: aulas do Vale ainda sem questão: dignidade sexual, paz pública, fé pública, crimes de particular contra a Administração; Penal geral (culpabilidade, tentativa, desistência, arrependimento posterior, concurso de pessoas, penas e multa, aplicação da lei 03 e 04); CPP (prisão domiciliar); CF arts. 38 a 43 e art. 5º parte 2; ECA, Improbidade, Idoso, Desarmamento e 13.022 nas partes 2 em diante; Informática, Português e Matemática por aba ou tópico.
+
+Problemas de configuração: o acesso ao site do Planalto pede aprovação na primeira vez; foi aprovado nesta sessão.
+
+---
+
 ## 24/11/2026 (Chat, conta do Fred): mapa das aulas do Vale Concursos
 
 Notion: lançado em 24/11/2026
@@ -20,7 +41,7 @@ Total: 900 questões (esp 166, leg 208, por 165, rl 121, inf 155, cg 85), sem qu
 Linha de registro: 24/11/2026 (Chat, conta do Fred): mapa das 213 aulas do Vale; 765 questões com link para a aula exata; total 900
 
 O que foi feito:
-- Novo arquivo questoes/98-vale-aulas.js com as 213 aulas de conteúdo do curso GCM São João del-Rei no Hotmart (15 módulos), cada uma como chave E.va_<id>, e as regras VALE_REGRAS que ligam tópico e enunciado à aula.
+- Novo arquivo questoes/02a-vale-aulas.js com as 213 aulas de conteúdo do curso GCM São João del-Rei no Hotmart (15 módulos), cada uma como chave E.va_<id>, e as regras VALE_REGRAS que ligam tópico e enunciado à aula.
 - questoes/99-links-vale.js passou a usar essas regras: a questão aponta para a aula exata, no lugar do link do módulo ou da lei. Links de simulado e da lista de 60 questões de Desarmamento continuam.
 - Resultado: 765 questões com link para a aula exata; 135 continuam com o link do módulo porque o Vale não tem aula específica do tema (Atualidades, Cidadania, Cultura, Meio ambiente, Backup, Nuvem, IA, Teams, Hardware, Redes sociais, Semântica, Sintaxe, Figuras de linguagem, Formação de palavras).
 - 114 das 213 aulas já têm questões ligadas. As outras 99 (por exemplo, a maior parte dos crimes em espécie do Código Penal, partes 2 em diante de ECA, Improbidade e Idoso, CF arts. 38 a 43, abas do Word, do PowerPoint e do Excel, Matemática) ficam como pauta para questões novas.

@@ -1,5 +1,13 @@
 // Novidades: a entrada mais recente fica no topo. Cada nova adição ao app ganha um id novo (maior que o anterior).
 const NEWS = [
+  { id: 14, data: "28/11/2026", titulo: "+27 questões de Código Penal",
+    itens: [
+      "Homicídio, feminicídio e o novo vicaricídio (Lei 15.384/2026)",
+      "Aborto, infanticídio, lesões, omissão de socorro e rixa",
+      "Honra, perseguição, domicílio e correspondência",
+      "Patrimônio com as penas atuais: furto, roubo, fraude eletrônica e receptação"
+    ],
+    total: 927 },
   { id: 13, data: "24/11/2026", titulo: "Links diretos para as aulas do Vale",
     itens: [
       "Cada questão agora abre a videoaula exata do Vale Concursos",

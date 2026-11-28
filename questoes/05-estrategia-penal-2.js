@@ -67,7 +67,7 @@ q("leg",3,"CPP: prisões e medidas cautelares",
 ["cf","cpp"],["pen5","vcpp"]); SRC("FGV, Cadete PM-TO, 2025; FCC, Soldado PM-BA, 2023");
 
 q("leg",3,"CPP: prisões e medidas cautelares",
-"João, primário, é preso em flagrante por lesão corporal contra a esposa (pena de 1 a 4 anos de reclusão, violência doméstica). Na audiência de custódia, o juiz:",
+"João, primário, é preso em flagrante por lesão corporal contra a esposa (art. 129, §9º, pena de reclusão, violência doméstica). Na audiência de custódia, o juiz:",
 ["não pode arbitrar fiança, pois o crime é de violência doméstica.","não pode arbitrar fiança, pois a pena máxima passa de 2 anos.","pode arbitrar fiança, podendo ou não fixar outras medidas cautelares.","pode arbitrar fiança, mas é obrigado a cumulá-la com outras cautelares."],2,
 "O crime não está entre os inafiançáveis. O juiz pode conceder fiança em qualquer crime afiançável e decidir se acrescenta outras cautelares (art. 319, § 4º, e art. 282). A Lei Maria da Penha veda institutos despenalizadores dos Juizados (Lei 9.099), não a fiança.",
 "Pena máxima acima de 4 anos só impede a fiança pelo DELEGADO (art. 322), não pelo juiz.",
